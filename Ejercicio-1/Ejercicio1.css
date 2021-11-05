@@ -1,0 +1,30 @@
+body{
+	font: 400 15px Tahoma, sans-serif;
+}
+h1 {
+    color:red;
+	text-align: center;
+}
+h2 {
+    color:orange;
+	text-align: center;
+}
+h3 {
+    color:yellow;
+	text-align: center;
+}
+h4 {
+    color:green;
+	text-align: center;
+}
+p {
+    color:blue;
+	text-align: center;
+}
+*{
+    margin: 0.5em;
+    background-color: #dabbfe;
+}
+footer{
+	text-align:center;
+}
