@@ -14,8 +14,9 @@
             Calculadora Basica
         </h1>
         <main>
+			
             <input type="text" id="pantalla" disabled=""/>
-
+			<form>
 			<input type="button" id="mrc" 	value="MRC" onclick="calculadora.botonMemRecallClear()"/>			
 			<input type="button" id="m+" 	value="M+" onclick="calculadora.botonMemSum()"/>
 			<input type="button" id="m-" 	value="M-" onclick="calculadora.botonMemSub()"/>			
@@ -42,7 +43,7 @@
 			<input type="button" id="dec"		value="." onclick="calculadora.botonSimple('.')"/>
 			<input type="button" id="c"			value="C" onclick="calculadora.botonClear()"/>
 			<input type="button" id="equal"		value="=" onclick="calculadora.calcularResultado()"/>
-
+			</form>
         </main>
         
     </body>
