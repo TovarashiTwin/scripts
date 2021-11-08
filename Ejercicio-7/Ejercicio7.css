@@ -1,0 +1,25 @@
+
+body {
+    font-family: "Times New Roman", Times, serif;
+    line-height: 1.8;
+    color: #981D3E;
+    background-color: #f6f6f6;
+	background-size: cover;
+  }
+
+
+    h1,h2 {
+    color: #7e122f;
+    text-transform: uppercase;    
+}
+/* Especificidad =  001 */
+table,th, td{
+	border-collapse: collapse;
+	border: 0.1em solid black;
+	text-align: center;	
+}
+/* Especificidad =  001 */
+th{
+	background-color: #6a142b;
+	color: white;
+}

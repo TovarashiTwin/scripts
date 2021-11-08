@@ -12,12 +12,13 @@
 	<body>
         <main>
 			<h1>Ejercicio 7</h1>
-			<button id="elementoPadre">Mostrar elemento padre y tipo de elemento</button>         
+			<button onclick="ej.mostrarElementoPadre()">Mostrar elemento padre y tipo de elemento</button>         
             <h2>Frutas</h3>
             <input type="text" id="inputParrafo" value="Nuevo elemento">
-            <button id="add">Añadir</button>
-			<button id="delete">Borrar</button>
-			<button id="ocultar_mostrar">Ocultar</button>
+            <button onclick="ej.add()">Añadir</button>
+			<button onclick="ej.delete()">Borrar</button>
+			<button onclick="ej.ocultar()">Ocultar</button>
+			<button id="modificar" onclick="ej.modificar()">Modificar</button>
             <p id= fruta>Manzana</p>
 
 			<h3>Tabla de referencia de frutas</h3>
@@ -48,7 +49,7 @@
 					<td>5</td>					
 				</tr>		
 			</table>
-			<button id="sumTabla">Calcular numero de filas y columnas</button>
+			<button id= "sumTabla" onclick="ej.sumTabla()">Calcular numero de filas y columnas</button>
         </main>
     </body>
 </html>
