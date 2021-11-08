@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+	
+<ruta nombre = "Gijón - Covadonga (a pie)"> 
+	<tipo> Paisajística </tipo>
+	<transporte> A pie </transporte>
+	<duracion> 3 días </duracion>
+	<agencia> Sin agencia </agencia>
+	<descripcion> Gijón a Covadonga en tres días. Se puede hacer en menos, pero en mi
+opinión tres días es lo mínimo para que sea algo divertido. Si no se está
+en buena forma física, se puede hacer también en cuatro días.
+El camino está todo muy bien señalizado.
+- Primer día: De Gijón (Camping de Deva) a Sietes. Son unos 28,5km con
+un ascenso acumulado de unos 1200m
+Desde Gijón hasta Amandi (Villaviciosa), donde comemos, este camino
+coincide con la vía norte del Camino de Santiago.
+Después seguimos hasta Sietes (28,5km). Aquí paramos a cenar y a
+dormir. Este pueblo es precioso, con muchos hórreos.
+- Segundo día: De Sietes a Llames de Parres. Son unos 22km, con un
+ascenso acumulado de unos 475m
+Un buen sitio para parar a comer algo es el pueblo de Miyares. Acabamos
+en Llames de Parres (a unos 22km,) Quedamos aquí a cenar y dormir.
+
+- Tercer día: De Llames de Parres a Covadonga. Otros 22km, con un
+ascenso acumulado de 460m
+Llegada a Covadonga sobre las cinco y media de la tarde. </descripcion>
+	<personas> Personas en buena forma física </personas>
+	<inicio> 
+		<lugar> Gijón </lugar>
+		<direccion> Camping de Deva, N-632, Km 65 </direccion>
+		<coordenadas>
+			<latitud grados = "43" minutos = "30.8532"/>
+			<longitud grados = "-5" minutos = "35.9184"/>
+			<altitud metros = "60"/>
+		</coordenadas>
+	</inicio>
+	<bibliografia> http://www.gijon.info/page/5425-de-gijon-a-covadonga </bibliografia>
+	<bibliografia> https://es.wikiloc.com/rutas-senderismo/de-gijon-a-covadonga-en-3-dias-7330967 </bibliografia>
+	<bibliografia> http://www.senderismoenasturias.es/cuadonga.htm </bibliografia>
+	<bibliografia> http://www.laposadadelaventa.com/ </bibliografia>
+	<recomendacion> 10 </recomendacion>
+	<hito nombre = "Amandi">
+		<descripcion> Amandi es una población que pertenece al concejo asturiano de Villaviciosa </descripcion>
+		<coordenadas>
+			<latitud grados = "43.4693987"/>
+			<longitud grados = "-5.4465067"/>
+			<altitud metros = "24"/>
+		</coordenadas>
+		<distancia unidades = "km"> 24 </distancia>
+		<fotografia> multimedia/amandi.jpg </fotografia>
+	</hito>
+	<hito nombre = "Sietes">
+		<descripcion> Sietes es un lugar perteneciente a la parroquia de Vallés,en el municipio de Villaviciosa (Asturias, España) </descripcion>
+		<coordenadas>
+			<latitud grados = "43.4329437"/>
+			<longitud grados = "-5.3759238"/>
+			<altitud metros = "469"/>
+		</coordenadas>
+		<distancia unidades = "km"> 4.5 </distancia>
+		<fotografia> multimedia/sietes.jpg </fotografia>
+	</hito>
+	<hito nombre = "Miyares">
+		<descripcion> Miyares es una parroquia del concejo de Piloña (Asturias). Está situada en la falda sur del Sueve en el valle del río Borines. </descripcion>
+		<coordenadas>
+			<latitud grados = "43.3777689"/>
+			<longitud grados = "-5.3010852"/>
+			<altitud metros = "158"/>
+		</coordenadas>
+		<distancia unidades = "km"> 11.5 </distancia>
+		<fotografia> multimedia/miyares.jpg </fotografia>
+	</hito>
+	<hito nombre = "Llames de Parres">
+		<descripcion> Llames de Parres es un pueblo del concejo de Parres, Asturias </descripcion>
+		<coordenadas>
+			<latitud grados = "43.3555913"/>
+			<longitud grados = "-5.2119356"/>
+			<altitud metros = "148"/>
+		</coordenadas>
+		<distancia unidades = "km"> 10 </distancia>
+		<fotografia> multimedia/llames.jpg </fotografia>
+	</hito>
+	<hito nombre = "Covadonga ">
+		<descripcion> Final de la ruta </descripcion>
+		<coordenadas>
+			<latitud grados = "43.3123301"/>
+			<longitud grados = "-5.0606867"/>
+			<altitud metros = "236"/>
+		</coordenadas>
+		<distancia unidades = "km"> 22 </distancia>
+		<fotografia> multimedia/covadonga1.jpg </fotografia>
+		<fotografia> multimedia/covadonga2.jpg </fotografia>
+		<fotografia> multimedia/covadonga3.jpg </fotografia>
+	</hito>
+</ruta>
