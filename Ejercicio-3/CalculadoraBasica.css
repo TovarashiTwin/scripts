@@ -2,36 +2,36 @@
 * El cuerpo de la calculadora
 */
 body {
-  
-    display:grid;
-    grid-gap: 2%;
-    grid-template-areas:  "display"    
+    /* grid-template-areas:  "display"    
                           "buttons"
-                          "buttons";
+                          "buttons"; */    
     max-width: 800px;
     align-self: center;
   }
   
-  form {    
-    grid-area: buttons;
+
+form {        
     display: grid;  
-    grid-template-columns: 25% 25% 25% 25%;
+    /*grid-template-columns: 25% 25% 25% 25%;*/
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 2%;
     background-color: #fff;
     color: #444;
   }
   
   
-  input[type=button] {
+input[type=button] {
     background-color: #444;
     color: #fff;
     font-size: 150%;
   }
-  input[type=text] {
-      grid-area: display;
+form > textarea {
       color: green;
       text-align: center;
+
+      grid-column-start: 1;
+      grid-column-end: 5;
   }
   h1 {
-      text-align: center;    
-  }
+    text-align: center;    
+}
