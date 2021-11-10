@@ -46,11 +46,11 @@ class CalculadoraBasica{
     }
 
 
-    calcularResultado(){
+    calcularResultado2(){
         this.auxMemory = false;
         try{
             //Dependiendo de la operacion necesitemos uno o dos numeros
-            if(this.primerNumero != null){
+            if(this.primerNumero != null){//esto habra que modificarlo
                 let segundoNumero = new Number(this.numeroProvisional);
                 //let toEval = this.primerNumero + this.operacion +segundoNumero;
                 //console.log(toEval);                
@@ -74,7 +74,11 @@ class CalculadoraBasica{
             //console.log(this.memoria);
         }
     }  
-
+    calcularResultado(){
+        let resultado = eval("new Number('123')+ new Number('321')");
+              
+        document.getElementById('pantalla').value = resultado;
+    }
 
     ///BOTONES ESPECIALES DE MEMORIA
     botonMemSum(){
