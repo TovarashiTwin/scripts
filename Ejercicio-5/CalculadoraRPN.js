@@ -15,10 +15,17 @@ class Stack{
             return "Underflow"; 
         return this.items.pop(); 
     } 
-    display(){
+    displayFila(){
         var result = "";
 		for(var i in this.items)
             result += " " + this.items[i];
+		return result;
+    }
+    display(){
+        var result = "";
+		for (let i = 0; i < this.items.length; i++) {
+            result +=  this.items[i]+"\n";//(this.items.length-i) + ".\t\t"+ //esto es si quieres enumerarlo
+        }
 		return result;
     }
 }
@@ -37,32 +44,32 @@ class CalculadoraRPN{
     botonSuma(){
         var param1 = parseFloat(this.theStack.pop());
         var param2 = parseFloat(this.theStack.pop());
-        this.theStack.push(param1 + param2);
+        this.theStack.push(param2 + param1);
         this.mostrarPila();
     }
     botonResta(){
         var param1 = parseFloat(this.theStack.pop());
         var param2 = parseFloat(this.theStack.pop());
-        this.theStack.push(param1 - param2);
+        this.theStack.push(param2 - param1);
         this.mostrarPila();
     }
     botonDivision(){
         var param1 = parseFloat(this.theStack.pop());
         var param2 = parseFloat(this.theStack.pop());
-        this.theStack.push(param1 / param2);
+        this.theStack.push(param2 / param1);
         this.mostrarPila();
     }
     botonMultiplicacion(){
         var param1 = parseFloat(this.theStack.pop());
         var param2 = parseFloat(this.theStack.pop());
-        this.theStack.push(param1 * param2);
+        this.theStack.push(param2 * param1);
         this.mostrarPila();
     }
     
     botonPotenciaDeX(){
         var param1 = parseFloat(this.theStack.pop());
         var param2 = parseFloat(this.theStack.pop());
-        this.theStack.push(Math.pow(param1,param2));
+        this.theStack.push(Math.pow(param2,param1));
         this.mostrarPila();
     }
     botonPotenciaDeDos(){

@@ -46,7 +46,7 @@ class CalculadoraBasica{
     }
 
 
-    calcularResultado2(){
+    calcularResultado(){
         this.auxMemory = false;
         try{
             //Dependiendo de la operacion necesitemos uno o dos numeros
@@ -74,7 +74,7 @@ class CalculadoraBasica{
             //console.log(this.memoria);
         }
     }  
-    calcularResultado(){
+    calcularResultado2(){
         let resultado = eval("new Number('123')+ new Number('321')");
               
         document.getElementById('pantalla').value = resultado;

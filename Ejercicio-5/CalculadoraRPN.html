@@ -14,42 +14,44 @@
             CalculadoraRPN
         </h1>
         <main>
-			<input type="text" id="pila" disabled=""/>
-            <input type="text" id="pantalla" disabled=""/>
+			<form>
+				<textarea id="pila" disabled="" rows = 6></textarea>
+				<textarea id="pantalla" disabled=""></textarea>
+				<!-- <input type="textarea" id="pantalla" disabled=""/> -->
 
-			<input type="button" id="mrc" 	value="MRC" onclick="calculadora.botonMemRecallClear()"/>			
-			<input type="button" id="m+" 	value="M+" onclick="calculadora.botonMemSum()"/>
-			<input type="button" id="m-" 	value="M-" onclick="calculadora.botonMemSub()"/>			
-			<input type="button" id="div" 	value="/" onclick="calculadora.botonDivision()"/>
+				<input type="button" id="mrc" 	value="MRC" onclick="calculadora.botonMemRecallClear()"/>			
+				<input type="button" id="m+" 	value="M+" onclick="calculadora.botonMemSum()"/>
+				<input type="button" id="m-" 	value="M-" onclick="calculadora.botonMemSub()"/>			
+				<input type="button" id="div" 	value="/" onclick="calculadora.botonDivision()"/>
 
-            <input type="button" id="numeric" 	value="7" onclick="calculadora.botonNumerico(7)"/>
-			<input type="button" id="numeric" 	value="8" onclick="calculadora.botonNumerico(8)"/>
-			<input type="button" id="numeric"	value="9" onclick="calculadora.botonNumerico(9)"/>
-			<input type="button" id="mul" 		value="*" onclick="calculadora.botonMultiplicacion()"/>
-			
+				<input type="button" id="numeric" 	value="7" onclick="calculadora.botonNumerico(7)"/>
+				<input type="button" id="numeric" 	value="8" onclick="calculadora.botonNumerico(8)"/>
+				<input type="button" id="numeric"	value="9" onclick="calculadora.botonNumerico(9)"/>
+				<input type="button" id="mul" 		value="*" onclick="calculadora.botonMultiplicacion()"/>
+				
 
-			<input type="button" id="numeric"	value="4" onclick="calculadora.botonNumerico(4)"/>
-			<input type="button" id="numeric" 	value="5" onclick="calculadora.botonNumerico(5)"/>
-			<input type="button" id="numeric" 	value="6" onclick="calculadora.botonNumerico(6)"/>
-			<input type="button" id="sub" 		value="-" onclick="calculadora.botonResta()"/>
-			
-			
-			<input type="button" id="numeric" 	value="1" onclick="calculadora.botonNumerico(1)"/>
-			<input type="button" id="numeric" 	value="2" onclick="calculadora.botonNumerico(2)"/>
-			<input type="button" id="numeric" 	value="3" onclick="calculadora.botonNumerico(3)"/>
-			<input type="button" id="sum" 		value="+" onclick="calculadora.botonSuma()"/>		
-			
-			<input type="button" id="numeric"	value="0" onclick="calculadora.botonNumerico(0)"/>
-			<input type="button" id="dec"		value="." onclick="calculadora.botonNumerico('.')"/>
-			<input type="button" id="c"			value="C" onclick="calculadora.botonClear()"/>
-			
+				<input type="button" id="numeric"	value="4" onclick="calculadora.botonNumerico(4)"/>
+				<input type="button" id="numeric" 	value="5" onclick="calculadora.botonNumerico(5)"/>
+				<input type="button" id="numeric" 	value="6" onclick="calculadora.botonNumerico(6)"/>
+				<input type="button" id="sub" 		value="-" onclick="calculadora.botonResta()"/>
+				
+				
+				<input type="button" id="numeric" 	value="1" onclick="calculadora.botonNumerico(1)"/>
+				<input type="button" id="numeric" 	value="2" onclick="calculadora.botonNumerico(2)"/>
+				<input type="button" id="numeric" 	value="3" onclick="calculadora.botonNumerico(3)"/>
+				<input type="button" id="sum" 		value="+" onclick="calculadora.botonSuma()"/>		
+				
+				<input type="button" id="numeric"	value="0" onclick="calculadora.botonNumerico(0)"/>
+				<input type="button" id="dec"		value="." onclick="calculadora.botonNumerico('.')"/>
+				<input type="button" id="c"			value="C" onclick="calculadora.botonClear()"/>
+				<input type="button" id="potencia2"	value="x^2" onclick="calculadora.botonPotenciaDeDos()"/>
+				
+				<input type="button" id="potenciax"	value="x^y" onclick="calculadora.botonPotenciaDeX()"/>
+				<input type="button" id="sqrt" 		value="√▭" onclick="calculadora.botonRaizCuadrada()"/>
+				<input type="button" id="sqrt" 		value="logx(y)" onclick="calculadora.botonLogaritmo()"/>
 
-			<input type="button" id="potencia2"	value="x^2" onclick="calculadora.botonPotenciaDeDos()"/>
-			<input type="button" id="potenciax"	value="x^y" onclick="calculadora.botonPotenciaDeX()"/>
-			<input type="button" id="sqrt" 		value="√▭" onclick="calculadora.botonRaizCuadrada()"/>
-
-			<input type ="button" id="enter" value="Enter" onclick="calculadora.botonEnter()"/>
-
+				<input type ="button" id="enter" value="Enter" onclick="calculadora.botonEnter()"/>
+			</form>
         </main>
         
     </body>
