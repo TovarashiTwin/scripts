@@ -1,24 +1,21 @@
-/*
-* El cuerpo de la calculadora
-*/
-body {
-    /* max-width: 800px; */
-    align-self: center;
-  }
+
   
 
-form {     
-    max-width: 800px;   
+form {    
     display: grid;  
     /*grid-template-columns: 25% 25% 25% 25%;*/
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 2%;   
     color: #444;
 
+
+   /* Que no se haga muy grande */
+    max-width: 600px;  
+
     /*Esto es para que parezca una calculadora */
-    padding:20px;
+    /* padding:20px;
     background-color: #909497;
-    border-radius: 25px;
+    border-radius: 25px; */
   }
   
   
@@ -36,5 +33,5 @@ form > textarea {
     text-align: right;
   }
   h1 {
-    text-align: center;    
+    text-align: left;    
 }
