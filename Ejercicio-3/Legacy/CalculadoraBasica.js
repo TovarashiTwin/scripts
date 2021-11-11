@@ -61,29 +61,7 @@ class CalculadoraBasica{
     }
     calcularResultado(){
         this.auxMemory = false;
-        try{
-            let pantallaAsString = this.pantalla;
-            let toEval = "";
-            let aux = "";
-            for (let i = 0; i < pantallaAsString.length; i++) {
-                //Contemplamos dos casos, es un numero o '.' o no lo es
-                let char = pantallaAsString[i];
-                if(/^[0-9]$/.test(char) || char == '.'){
-                    aux += char;
-                }else{
-                    if (aux != ""){
-                        toEval += "new Number(" + aux +")";
-                        toEval += char
-                        aux = "";
-                    }else{
-                        toEval += char
-                    }
-                }
-            }
-            if(aux != ""){
-                toEval += "new Number(" + aux +")"; 
-            }
-            console.log(toEval) ;
+        try{            
             document.getElementById('pantalla').value = eval(this.pantalla);
             this.pantalla = document.getElementById('pantalla').value;
         }catch(excepcion){
@@ -93,27 +71,4 @@ class CalculadoraBasica{
     }  
     
 }
-class CalculadoraCientifica extends CalculadoraBasica{ 
-    constructor(){
-        super();        
-    }
-    //x^2
-    botonPotenciaDeDos(){
-        this.pantalla = Math.pow(eval(this.consola,2)).toString();
-        this.display();
-    }
-    //x^y
-    botonPotenciaDeX(){
-        //this.pantalla = Math.pow(eval(this.consola,2)).toString();
-        //this.primerArgumento
-        this.pantalla = "";
-        this.display();
-    }
-    
-    botonRaizCuadrada(){
-        this.pantalla = Math.sqrt(eval(this.pantalla)).toString();
-        this.display();
-    }
-
-}
-var calculadora = new CalculadoraCientifica();
+var calculadora = new CalculadoraBasica();

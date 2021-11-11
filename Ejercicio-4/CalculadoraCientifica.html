@@ -14,39 +14,44 @@
             Calculadora Basica
         </h1>
         <main>
-            <input type="text" id="pantalla" disabled=""/>
 
-			<input type="button" id="mrc" 	value="MRC" onclick="calculadora.botonMemRecallClear()"/>			
-			<input type="button" id="m+" 	value="M+" onclick="calculadora.botonMemSum()"/>
-			<input type="button" id="m-" 	value="M-" onclick="calculadora.botonMemSub()"/>			
-			<input type="button" id="div" 	value="/" onclick="calculadora.botonSimple('/')"/>
+			<form>
 
-            <input type="button" id="numeric" 	value="7" onclick="calculadora.botonSimple(7)"/>
-			<input type="button" id="numeric" 	value="8" onclick="calculadora.botonSimple(8)"/>
-			<input type="button" id="numeric"	value="9" onclick="calculadora.botonSimple(9)"/>
-			<input type="button" id="mul" 		value="*" onclick="calculadora.botonSimple('*')"/>
-			
+				<textarea  id = "pantalla" disabled="" ></textarea>
 
-			<input type="button" id="numeric"	value="4" onclick="calculadora.botonSimple(4)"/>
-			<input type="button" id="numeric" 	value="5" onclick="calculadora.botonSimple(5)"/>
-			<input type="button" id="numeric" 	value="6" onclick="calculadora.botonSimple(6)"/>
-			<input type="button" id="sub" 		value="-" onclick="calculadora.botonSimple('-')"/>
-			
-			
-			<input type="button" id="numeric" 	value="1" onclick="calculadora.botonSimple(1)"/>
-			<input type="button" id="numeric" 	value="2" onclick="calculadora.botonSimple(2)"/>
-			<input type="button" id="numeric" 	value="3" onclick="calculadora.botonSimple(3)"/>
-			<input type="button" id="sum" 		value="+" onclick="calculadora.botonSimple('+')"/>		
-			
-			<input type="button" id="numeric"	value="0" onclick="calculadora.botonSimple('0')"/>
-			<input type="button" id="dec"		value="." onclick="calculadora.botonSimple('.')"/>
-			<input type="button" id="c"			value="C" onclick="calculadora.botonClear()"/>
-			<input type="button" id="equal"		value="=" onclick="calculadora.calcularResultado()"/>
+				<input type="button" value="MRC" onclick="calculadora.botonMemRecallClear()"/>			
+				<input type="button" value="M+" onclick="calculadora.botonMemSum()"/>
+				<input type="button" value="M-" onclick="calculadora.botonMemSub()"/>			
+				<input type="button"value="/" onclick="calculadora.botonSimple('/')"/>
 
-			<input type="button" id="potencia2"	value="x^2" onclick="calculadora.botonPotenciaDeDos()"/>
-			<input type="button" id="potenciax"	value="x^y" onclick="calculadora.botonPotenciaDeX()"/>
-			<input type="button" id="sqrt" 		value="√▭" onclick="calculadora.botonRaizCuadrada()"/>
+				<input type="button" value="7" onclick="calculadora.botonSimple(7)"/>
+				<input type="button" value="8" onclick="calculadora.botonSimple(8)"/>
+				<input type="button" value="9" onclick="calculadora.botonSimple(9)"/>
+				<input type="button" value="*" onclick="calculadora.botonSimple('*')"/>
+				
 
+				<input type="button" value="4" onclick="calculadora.botonSimple(4)"/>
+				<input type="button" value="5" onclick="calculadora.botonSimple(5)"/>
+				<input type="button" value="6" onclick="calculadora.botonSimple(6)"/>
+				<input type="button" value="-" onclick="calculadora.botonSimple('-')"/>
+				
+				
+				<input type="button" value="1" onclick="calculadora.botonSimple(1)"/>
+				<input type="button" value="2" onclick="calculadora.botonSimple(2)"/>
+				<input type="button" value="3" onclick="calculadora.botonSimple(3)"/>
+				<input type="button" value="+" onclick="calculadora.botonSimple('+')"/>		
+				
+				<input type="button" value="0" onclick="calculadora.botonSimple('0')"/>
+				<input type="button" value="." onclick="calculadora.botonSimple('.')"/>
+				<input type="button" value="C" onclick="calculadora.botonClear()"/>
+				<input type="button" value="=" onclick="calculadora.calcularResultado()"/>
+
+				<input type="button" value="x^2" onclick="calculadora.botonPotenciaDeDos()"/>
+				<input type="button" value="x^y" onclick="calculadora.botonPotenciaDeX()"/>
+				<input type="button" value="√▭" onclick="calculadora.botonRaizCuadrada()"/>
+
+
+			</form>
         </main>
         
     </body>

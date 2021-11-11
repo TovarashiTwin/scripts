@@ -1,45 +1,37 @@
 /*
 * El cuerpo de la calculadora
 */
-main{
-    display:block;
-    padding:25px;
-    background-color:darkslategrey;
-    font: 400 15px Verdana, sans-serif;
-    width:280px;
-    height:290px;
-    border-radius: 25px;
+body {
+    /* grid-template-areas:  "display"    
+                          "buttons"
+                          "buttons"; */    
+    /* max-width: 800px; */
+    align-self: center;
   }
-  /*
-  La pantalla de la calculadora
-  */
-  input[type=text] {
-    width: 72%;
-    padding: 12px 34px;
-    font-size: 18px;
-    margin: 6px 0;
-    border-radius: 10px;
-    text-align: left;
-    color: #222;
-    background: white;
-}
-/*
-Botones de la calculadora
-*/
-input[type=button] {
-    background-color:lightslategrey;
-    border: none;
-    color: white;
-    padding: 8px 12px;
-    font-size: 18px;
-    min-width: 22%;
-    border-radius: 10px;
-    text-decoration: none;
-    margin: 4px 2px;
-    cursor: pointer;
-}
+  
 
-#numeric{
-    background-color: lightslategrey;
-    color:white;
+form {        
+    display: grid;  
+    /*grid-template-columns: 25% 25% 25% 25%;*/
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2%;
+    background-color: #fff;
+    color: #444;
+  }
+  
+  
+input[type=button] {
+    background-color: #444;
+    color: #fff;
+    font-size: 150%;
+  }
+form > textarea {
+      color: green;
+      text-align: center;
+      font-size: 200%;
+      grid-column-start: 1;
+      grid-column-end: 5;
+  }
+  h1 {
+    text-align: center;    
 }
