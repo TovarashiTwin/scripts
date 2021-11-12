@@ -19,39 +19,53 @@
 				<textarea id="pila" disabled="" rows = 4></textarea>
 				<textarea id="pantalla" disabled=""></textarea>
 				<!-- <input type="textarea" id="pantalla" disabled=""/> -->
+							
 
-				<input type="button" value="mrc" onclick="calculadora.botonMemRecallClear()"/>			
-				<input type="button" value="m+" onclick="calculadora.botonMemSum()"/>
-				<input type="button" value="m-" onclick="calculadora.botonMemSub()"/>			
+				<!-- <input type="button" value="x^y" onclick="calculadora.botonPotenciaDeX()"/>
+				<input type="button" value="√▭" onclick="calculadora.botonRaizCuadrada()"/>
+				<input type="button" value="x^2" onclick="calculadora.botonLogaritmo()"/> -->
+				<!-- <input type="button" value="logx(y)" onclick="calculadora.botonPotenciaDeDos()"/> -->
+
+
+				<!-- Primera fila -->
+				<input type="button" value="asin" onclick="calculadora.botonArcoSeno()"/>
+				<input type="button" value="cos" onclick="calculadora.botonArcoCoseno()"/>
+				<input type="button" value="atan" onclick="calculadora.botonArcoTangente()"/>
+				<input type="button" value="x^y" onclick="calculadora.botonPotenciaDeX()"/>
+
+				<!-- Segunda fila -->				
+				<input type="button" value="sin" onclick="calculadora.botonSeno()"/>
+				<input type="button" value="cos" onclick="calculadora.botonCoseno()"/>
+				<input type="button" value="tan" onclick="calculadora.botonTangente()"/>
 				<input type="button" value="/" onclick="calculadora.botonDivision()"/>
 
+				<!-- Tercera fila -->
 				<input type="button" value="7" onclick="calculadora.botonNumerico(7)"/>
 				<input type="button" value="8" onclick="calculadora.botonNumerico(8)"/>
 				<input type="button" value="9" onclick="calculadora.botonNumerico(9)"/>
 				<input type="button" value="*" onclick="calculadora.botonMultiplicacion()"/>
 				
-
+				<!-- Cuarta fila -->
 				<input type="button" value="4" onclick="calculadora.botonNumerico(4)"/>
 				<input type="button" value="5" onclick="calculadora.botonNumerico(5)"/>
 				<input type="button" value="6" onclick="calculadora.botonNumerico(6)"/>
 				<input type="button" value="-" onclick="calculadora.botonResta()"/>
 				
-				
+				<!-- Quinta fila -->
 				<input type="button" value="1" onclick="calculadora.botonNumerico(1)"/>
 				<input type="button" value="2" onclick="calculadora.botonNumerico(2)"/>
 				<input type="button" value="3" onclick="calculadora.botonNumerico(3)"/>
 				<input type="button" value="+" onclick="calculadora.botonSuma()"/>		
 				
+				<!-- Sexta fila -->
 				<input type="button" value="0" onclick="calculadora.botonNumerico(0)"/>
 				<input type="button" value="." onclick="calculadora.botonNumerico('.')"/>
 				<input type="button" value="C" onclick="calculadora.botonClear()"/>
-				<input type="button" value="logx(y)" onclick="calculadora.botonPotenciaDeDos()"/>
-				
-				<input type="button" value="x^y" onclick="calculadora.botonPotenciaDeX()"/>
-				<input type="button" value="√▭" onclick="calculadora.botonRaizCuadrada()"/>
-				<input type="button" value="x^2" onclick="calculadora.botonLogaritmo()"/>
-
 				<input type ="button" id="enter" value="Enter" onclick="calculadora.botonEnter()"/>
+
+
+				
+
 			</form>
         
         
