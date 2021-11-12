@@ -14,10 +14,6 @@ form {
     min-width: 280px;
 
     /*Esto es para que parezca una calculadora */
-    /* padding-top: 20px;
-    padding-right: 20px;
-    padding-bottom: 60px;
-    padding-left: 20px; */
     padding: 20px;
     background-color: #909497;
     border-radius: 25px;
