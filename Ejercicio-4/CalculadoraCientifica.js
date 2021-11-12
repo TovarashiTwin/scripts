@@ -84,7 +84,7 @@ class CalculadoraBasica{
                 toEval += "new Number(" + aux +")"; 
             }
             console.log(toEval) ;
-            document.getElementById('pantalla').value = eval(this.pantalla);
+            document.getElementById('pantalla').value = eval(toEval);
             this.pantalla = document.getElementById('pantalla').value;
         }catch(excepcion){
             document.getElementById('pantalla').value = "Syntax Error";
@@ -115,5 +115,16 @@ class CalculadoraCientifica extends CalculadoraBasica{
         this.display();
     }
 
+    botonParentesisIzquierdo(){
+        this.auxMemory = false;
+        this.pantalla+="(";
+        this.display();   
+    }
+
+    botonParentesisDerecho(){
+        this.auxMemory = false;
+        this.pantalla+=")";
+        this.display();   
+    }
 }
 var calculadora = new CalculadoraCientifica();

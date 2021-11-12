@@ -7,12 +7,12 @@
 		<META name="description" content="Ejercicio 3 entrega ECMAScript, Calculadora Basica">
 		<link rel="stylesheet" href="CalculadoraCientifica.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-		<title>Calculadora Basica</title>
+		<title>Calculadora Cientifica</title>
         <script src="CalculadoraCientifica.js"></script>
     </head>
     <body>
         <h1>
-            Calculadora Basica
+            Calculadora Cientifica
         </h1>
         <main>
 
@@ -47,8 +47,10 @@
 				<input type="button" value="C" onclick="calculadora.botonClear()"/>
 				<input type="button" value="=" onclick="calculadora.calcularResultado()"/>
 
-				<input type="button" value="x^2" onclick="calculadora.botonPotenciaDeDos()"/>
-				<input type="button" value="x^y" onclick="calculadora.botonPotenciaDeX()"/>
+				<!-- <input type="button" value="x^2" onclick="calculadora.botonPotenciaDeDos()"/>
+				<input type="button" value="x^y" onclick="calculadora.botonPotenciaDeX()"/> -->
+				<input type="button" value="(" onclick="calculadora.botonParentesisIzquierdo()"/>
+				<input type="button" value=")" onclick="calculadora.botonParentesisDerecho()"/>
 				<input type="button" value="√▭" onclick="calculadora.botonRaizCuadrada()"/>
 
 
