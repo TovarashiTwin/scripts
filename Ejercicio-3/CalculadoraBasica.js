@@ -1,7 +1,7 @@
 "use strict";
 class CalculadoraBasica{
     constructor () {
-		this.pantalla="";
+		this.pantalla="0";
         this.memoria=0.0;
         this.auxMemory = false;
         this.inputkey();
@@ -30,13 +30,22 @@ class CalculadoraBasica{
     };
     botonSimple(arg){
         //Esta funcion se usa para los botones que simplemente añaden su simbolo
+        if(this.pantalla == "0"){
+            this.pantalla = "";
+        }
         this.auxMemory = false;
         this.pantalla+=arg;
         this.display();        
     }
+    botonPunto(){
+        //Esta funcion se usa para los botones que simplemente añaden su simbolo
+        this.auxMemory = false;
+        this.pantalla+=".";
+        this.display();        
+    }
     botonClear(){
         this.auxMemory = false;
-        this.pantalla ="";
+        this.pantalla ="0";
         this.display();        
     }
     botonMemSum(){
@@ -54,13 +63,7 @@ class CalculadoraBasica{
             this.memoria -= parseFloat(this.pantalla);
         }
     }
-    //TODO remove
-    botonMemSave(){
-        this.calcularResultado();
-        if(document.getElementById('pantalla').value != "Syntax Error"){
-            this.memoria = this.pantalla;
-        }
-    }
+
     botonMemRecallClear(){
         //console.log(this.memoria.toString());
         if(this.auxMemory){//Borramos memoria
@@ -121,3 +124,4 @@ class CalculadoraBasica{
     }  
     
 }
+var calculadora = new CalculadoraBasica();

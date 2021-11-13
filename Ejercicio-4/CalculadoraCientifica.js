@@ -136,7 +136,10 @@ class CalculadoraCientifica extends CalculadoraBasica{
 
     }
     botonMemSave(){
-
+        this.calcularResultado();
+        if(document.getElementById('pantalla').value != "Syntax Error"){
+            this.memoria = this.pantalla;
+        }
     }
 
     //IDK
