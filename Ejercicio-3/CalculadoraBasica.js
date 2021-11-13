@@ -5,13 +5,16 @@ class CalculadoraBasica{
         this.memoria=0.0;
         this.auxMemory = false;
         this.inputkey();
+        
 	}
     display(){
         //console.log(this.pantalla);
-        document.getElementById('pantalla').value = this.pantalla;
+        document.getElementById('pantalla').value = this.pantalla;//TODO se puede usar getElementById?
+        if(this.pantalla == "Syntax Error"){
+            console.log("Syntax Error")
+            this.pantalla == "";
+        }
     }
-
-    //Los motones de memoria y C no pueden pulsarse con el teclado
     inputkey() {
         document.addEventListener("keydown", (event) => {
             if (["*", "/", "-", "+", "."].some(e => event.key.includes(e))) {
@@ -76,9 +79,15 @@ class CalculadoraBasica{
         }
 
     }
+
+    botonEnter(){
+        this.calcularResultado();
+        this.display();
+
+    }
     calcularResultado(){
         this.auxMemory = false;
-        try{
+        try{            
             let pantallaAsString = this.pantalla;
             let toEval = "";
             let aux = "";
@@ -101,14 +110,14 @@ class CalculadoraBasica{
                 toEval += "new Number(" + aux +")"; 
             }
             console.log(toEval) ;
-            document.getElementById('pantalla').value = eval(toEval);
-            this.pantalla = document.getElementById('pantalla').value;
+            
+            this.pantalla =  eval(toEval).toString();//El toString es para que siempre se interprete como string y funcione todo bien
+            // document.getElementById('pantalla').value = this.pantalla;
         }catch(excepcion){
-            this.pantalla = "";
-            document.getElementById('pantalla').value = "Syntax Error";
+            this.pantalla = "Syntax Error";
+            //document.getElementById('pantalla').value = "Syntax Error";
             //console.log(this.memoria);
         }
     }  
     
 }
-var calculadora = new CalculadoraBasica();
