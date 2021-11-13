@@ -1,86 +1,41 @@
+"use strict";
 class CalculadoraBasica{
     constructor () {
 		this.pantalla="";
         this.memoria=0.0;
         this.auxMemory = false;
-
-        this.primerNumero = null;//Esto lo meteremos en un Number
-        this.operacion = "";
-        
-        //aqui vamos metiendo los numeros en formato string hasta que llegue la hora de convertirlo
-        this.numeroProvisional = "";
-
+        this.inputkey();
 	}
     display(){
         //console.log(this.pantalla);
-        document.getElementById('pantalla').value = this.pantalla;//TODO se puede usar getElementById?
+        document.getElementById('pantalla').value = this.pantalla;
     }
 
-
-    botonNumerico(arg){
-        //Esta funcion se usa para los numeros del 0 al 9
+    //Los motones de memoria y C no pueden pulsarse con el teclado
+    inputkey() {
+        document.addEventListener("keydown", (event) => {
+            if (["*", "/", "-", "+", "."].some(e => event.key.includes(e))) {
+                this.botonSimple(event.key);
+            }
+            else if (!isNaN(event.key)) {//comprobamos que es un numero
+                this.botonSimple(event.key);
+            }
+            else if (event.key == "Enter") {
+                this.calcularResultado();
+            }
+        })
+    };
+    botonSimple(arg){
+        //Esta funcion se usa para los botones que simplemente añaden su simbolo
         this.auxMemory = false;
-
-        this.numeroProvisional += arg; //vamos almacenando los numeros como string, luego lo pasaremos a number
         this.pantalla+=arg;
-        this.display();
-    }
-
-    botonOperacion(arg){
-        //esta funcion se usa para + - / *
-        this.operacion = arg;//Si pulsamos otra se sobreescribe
-        //persistimos el primer numero y borramos la pantalla
-        this.primerNumero = new Number(this.numeroProvisional);
-        this.numeroProvisional = "";
-        this.pantalla = "";
         this.display();        
     }
-
-
     botonClear(){
         this.auxMemory = false;
         this.pantalla ="";
-        this.numeroProvisional = "";
-        this.primerNumero = null;
         this.display();        
     }
-
-
-    calcularResultado(){
-        this.auxMemory = false;
-        try{
-            //Dependiendo de la operacion necesitemos uno o dos numeros
-            if(this.primerNumero != null){//esto habra que modificarlo
-                let segundoNumero = new Number(this.numeroProvisional);
-                //let toEval = this.primerNumero + this.operacion +segundoNumero;
-                //console.log(toEval);                
-                let resultado = eval(this.primerNumero + this.operacion +segundoNumero);
-
-                //Lo mostramops
-                document.getElementById('pantalla').value = resultado;
-                this.pantalla = resultado;
-                this.primerNumero = null;//document.getElementById('pantalla').value;
-                this.numeroProvisional = resultado;
-            }else{
-                console.log("Faltaba primer numero");
-                //document.getElementById('pantalla').value = "Syntax Error";
-            }
-            
-            //document.getElementById('pantalla').value = eval(this.pantalla);
-            
-        }catch(excepcion){
-            console.log(excepcion);
-            document.getElementById('pantalla').value = "Syntax Error";
-            //console.log(this.memoria);
-        }
-    }  
-    calcularResultado2(){
-        let resultado = eval("new Number('123')+ new Number('321')");
-              
-        document.getElementById('pantalla').value = resultado;
-    }
-
-    ///BOTONES ESPECIALES DE MEMORIA
     botonMemSum(){
         this.auxMemory = false;
         this.calcularResultado();
@@ -121,7 +76,39 @@ class CalculadoraBasica{
         }
 
     }
-    
+    calcularResultado(){
+        this.auxMemory = false;
+        try{
+            let pantallaAsString = this.pantalla;
+            let toEval = "";
+            let aux = "";
+            for (let i = 0; i < pantallaAsString.length; i++) {
+                //Contemplamos dos casos, es un numero o '.' o no lo es
+                let char = pantallaAsString[i];
+                if(/^[0-9]$/.test(char) || char == '.'){
+                    aux += char;
+                }else{
+                    if (aux != ""){
+                        toEval += "new Number(" + aux +")";
+                        toEval += char
+                        aux = "";
+                    }else{
+                        toEval += char
+                    }
+                }
+            }
+            if(aux != ""){
+                toEval += "new Number(" + aux +")"; 
+            }
+            console.log(toEval) ;
+            document.getElementById('pantalla').value = eval(toEval);
+            this.pantalla = document.getElementById('pantalla').value;
+        }catch(excepcion){
+            this.pantalla = "";
+            document.getElementById('pantalla').value = "Syntax Error";
+            //console.log(this.memoria);
+        }
+    }  
     
 }
 var calculadora = new CalculadoraBasica();
