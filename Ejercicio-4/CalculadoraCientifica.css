@@ -10,7 +10,7 @@ body {
 form {        
     display: grid;  
     /*grid-template-columns: 25% 25% 25% 25%;*/
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     grid-gap: 5px;
     background-color: #fff;
     color: #444;
@@ -36,7 +36,7 @@ form > textarea {
       text-align: center;
       font-size: 200%;
       grid-column-start: 1;
-      grid-column-end: 5;
+      grid-column-end: 6;
   }
   h1 {
     text-align: center;    
