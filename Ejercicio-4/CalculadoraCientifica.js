@@ -12,7 +12,11 @@ class CalculadoraBasica{
         document.getElementById('pantalla').value = this.pantalla;//TODO se puede usar getElementById?
         if(this.pantalla == "Syntax Error"){
             console.log("Syntax Error")
-            this.pantalla == "";
+            this.pantalla = "";
+        }
+        if(isNaN(this.pantalla)){
+            console.log("NaN")
+            this.pantalla = "";
         }
     }
     inputkey() {
@@ -24,7 +28,7 @@ class CalculadoraBasica{
                 this.botonSimple(event.key);
             }
             else if (event.key == "Enter") {
-                this.calcularResultado();
+                this.botonEnter();
             }
         })
     };
