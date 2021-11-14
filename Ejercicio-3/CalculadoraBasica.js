@@ -14,7 +14,7 @@ class CalculadoraBasica{
             console.log("Syntax Error")
             this.pantalla = "";
         }
-        if(isNaN(this.pantalla)){
+        if(Number.isNaN(this.pantalla)){
             console.log("NaN")
             this.pantalla = "";
         }
