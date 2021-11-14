@@ -132,20 +132,23 @@ class CalculadoraCientifica extends CalculadoraBasica{
         super();
         this.arco = false;
         this.hyperbolica = false;
+        this.cambioFunciones = false;
 
     }
     //nuevas funciones de memoria
     botonMemClear(){
-
+        this.memoria = 0.0;
     }
     botonMemRecall(){
-
+        this.pantalla += this.memoria;
+        this.display();
     }
     botonMemSave(){
         this.calcularResultado();
         if(document.getElementById('pantalla').value != "Syntax Error"){
-            this.memoria = this.pantalla;
+            this.memoria = parseFloat(this.pantalla);
         }
+        this.display();
     }
 
     //IDK
@@ -293,8 +296,12 @@ class CalculadoraCientifica extends CalculadoraBasica{
         this.pantalla = Math.floor(this.pantalla);
         this.display();
     }
-    botonCambioExponenciales(){
-
+    botonCambioFunciones(){
+        if(this.cambioFunciones){
+            this.cambioFunciones = true;
+        }else{
+            this.cambioFunciones = false;
+        }
     }
     botonPi(){
         //podia haber hardcodeado el numero pi truncado pero me parecia más flexible hacerlo de esta manera
