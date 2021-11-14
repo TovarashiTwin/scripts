@@ -14,7 +14,9 @@ class CalculadoraBasica{
             console.log("Syntax Error")
             this.pantalla = "";
         }
-        if(isNaN(this.pantalla)){
+        //Es importante usar Number.isNaN en vez de isNaN porque solo comprueba que en este momento es NaN,
+        //los Strings que no seran numeros validos no los considera NaN 
+        if(Number.isNaN(this.pantalla)){
             console.log("NaN")
             this.pantalla = "";
         }
@@ -282,28 +284,49 @@ class CalculadoraCientifica extends CalculadoraBasica{
 
 
     botonCeil(){
-
+        this.calcularResultado();
+        this.pantalla = Math.ceil(this.pantalla);
+        this.display();
     }
     botonFloor(){
-
+        this.calcularResultado();
+        this.pantalla = Math.floor(this.pantalla);
+        this.display();
     }
     botonCambioExponenciales(){
 
     }
     botonPi(){
-        
+        //podia haber hardcodeado el numero pi truncado pero me parecia más flexible hacerlo de esta manera
+        this.pantalla += this.truncateDecimals(Math.PI,4);
+        this.display();
+    }
+    //https://stackoverflow.com/questions/4912788/truncate-not-round-off-decimal-numbers-in-javascript
+    truncateDecimals (num, digits) {
+        var numS = num.toString(),
+            decPos = numS.indexOf('.'),
+            substrLength = decPos == -1 ? numS.length : 1 + decPos + digits,
+            trimmedResult = numS.substr(0, substrLength),
+            finalResult = isNaN(trimmedResult) ? 0 : trimmedResult;
+    
+        return parseFloat(finalResult);
     }
     botonDms(){
 
     }
     botonQuitar(){
-
+        this.pantalla = this.pantalla.substring(0,this.pantalla.length-1)
+        this.display();
     }
     botonInverso(){
-
+        this.calcularResultado();
+        this.pantalla = (1/parseFloat(this.pantalla)).toString();
+        this.display();
     }
     botonAbsolute(){
-
+        this.calcularResultado();
+        this.pantalla = Math.abs(parseFloat(this.pantalla)).toString();
+        this.display();
     }
     botonExp(){
 
@@ -342,16 +365,29 @@ class CalculadoraCientifica extends CalculadoraBasica{
         this.display();   
     }
     botonFactorial(){
-
+        this.calcularResultado();
+        this.pantalla = parseFloat(this.pantalla);
+        let aux = 1;
+        for (var i = 2; i <= this.pantalla; i++){
+            aux = aux * i;
+        }
+        this.pantalla = aux.toString();
+        this.display();
     }
     botonDiezElevado(){
-
+        this.calcularResultado();
+        this.pantalla = Math.pow(10,parseFloat(this.pantalla)).toString();
+        this.display();
     }
     botonLogaritmo(){
-
+        this.calcularResultado();
+        this.pantalla = Math.log10(parseFloat(this.pantalla)).toString();
+        this.display();
     }
     botonLogNeperiano(){
-
+        this.calcularResultado();
+        this.pantalla = Math.log(parseFloat(this.pantalla)).toString();
+        this.display();
     }
 }
 var calculadora = new CalculadoraCientifica();
