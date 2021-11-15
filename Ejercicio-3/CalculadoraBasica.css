@@ -34,7 +34,7 @@ input[value="/"],input[value="+"],input[value="-"],input[value="*"]
   background-color: darkred;
 }
 form > textarea {
-      color: green;
+      background-color: lightgreen;
       text-align: center;
       font-size: 200%;
       grid-column-start: 1;
