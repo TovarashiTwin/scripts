@@ -49,15 +49,15 @@ class CalculadoraBasica{
         this.auxMemory = false;
         this.calcularResultado();
         if(document.getElementById('pantalla').value != "Syntax Error"){
-            console.log(parseFloat(this.pantalla))
-            this.memoria += parseFloat(this.pantalla);
+            console.log(new Number(this.pantalla))
+            this.memoria += new Number(this.pantalla);
         }
     }
     botonMemSub(){
         this.auxMemory = false;
         this.calcularResultado();
         if(document.getElementById('pantalla').value != "Syntax Error"){
-            this.memoria -= parseFloat(this.pantalla);
+            this.memoria -= new Number(this.pantalla);
         }
     }
     //TODO remove
@@ -142,7 +142,7 @@ class CalculadoraCientifica extends CalculadoraBasica{
         this.hyperbolica = false;
         this.cambioFunciones = false;
         this.funcionDosOperadores = "";//para las funciones de dos operadores guardamos aqui el primero operador, introducimos el segundo y le damos al enter
-
+        this.unidadAngulo = "DEG";
     }
 
 
@@ -167,15 +167,38 @@ class CalculadoraCientifica extends CalculadoraBasica{
     botonMemSave(){
         this.calcularResultado();
         if(document.getElementById('pantalla').value != "Syntax Error"){
-            this.memoria = parseFloat(this.pantalla);
+            this.memoria = new Number(this.pantalla);
         }
         this.display();
     }
 
     //IDK
     botonUnidadDeAngulo(){
-
+        if(this.unidadAngulo == "DEG"){
+            this.unidadAngulo = "RAD";
+            document.getElementById("unidadAngulo").setAttribute("value", "RAD");
+        }else if(this.unidadAngulo == "RAD"){
+            this.unidadAngulo = "GRAD";
+            document.getElementById("unidadAngulo").setAttribute("value", "GRAD");
+        }else if(this.unidadAngulo == "GRAD"){
+            this.unidadAngulo = "DEG";
+            document.getElementById("unidadAngulo").setAttribute("value", "DEG");
+        }
     }
+
+    DegToRad(value){
+        return value * (Math.PI/180);
+    }
+    RadToDeg(value){
+        return value * (180/Math.PI);
+    }
+    GradToRad(value){
+        return value * (Math.PI/200);
+    }
+    RadToGrad(value){
+        return value * (200/Math.PI);
+    }
+
     botonNotacionDiezElevado(){
 
     }
@@ -192,102 +215,126 @@ class CalculadoraCientifica extends CalculadoraBasica{
     //sin sinh y sin^-1
     botonSeno(){        
         this.calcularResultado();        
-        this.seno();
+        this.pantalla = this.seno(new Number(this.pantalla)).toString();
         this.display(); 
     }
-    seno(){
+    seno(value){
+        if(this.unidadAngulo == "DEG"){
+            value = this.DegToRad(value);
+        }
+        if(this.unidadAngulo == "GRAD"){
+            value = this.GradToRad(value);
+        }
         if(!this.arco){            
             if(!this.hyperbolica){
                 //seno sin                
-                this.pantalla = Math.sin(this.pantalla);                
+                value = Math.sin(value);                
             }
             else{                
                 //seno hyperbolico sinh
-                this.pantalla = Math.sinh(this.pantalla);   
+                value = Math.sinh(value);
             }
         }else{
             if(!this.hyperbolica){
                  //arcoseno sin^-1 asin
-                 this.pantalla = Math.asin(this.pantalla);   
+                 value = Math.asin(value); 
             }
             else{
                 //arcoseno hyperbolico asinh
-                this.pantalla = Math.asinh(this.pantalla);   
+                value= Math.asinh(value);  
             }
         }
+        // if(this.unidadAngulo == "DEG"){
+        //     value = this.RadToDeg(value);
+        // }
+        // if(this.unidadAngulo == "GRAD"){
+        //     value = this.RadToGrad(value);
+        // }
+        return value;
     }
 
     botonCoseno(){        
         this.calcularResultado();
-        this.coseno();
+        this.pantalla = this.coseno(new Number(this.pantalla)).toString();
         this.display(); 
     }
 
-    coseno(){
+    coseno(value){
+        if(this.unidadAngulo == "DEG"){
+            value = this.DegToRad(value);
+        }
+        if(this.unidadAngulo == "GRAD"){
+            value = this.GradToRad(value);
+        }
         if(!this.arco){            
             if(!this.hyperbolica){
                 //seno sin                
-                this.pantalla = Math.cos(this.pantalla);                
+                value = Math.cos(value);                
             }
             else{                
                 //seno hyperbolico sinh
-                this.pantalla = Math.cosh(this.pantalla);   
+                value = Math.cosh(value);   
             }
         }else{
             if(!this.hyperbolica){
                  //arcoseno sin^-1 asin
-                 this.pantalla = Math.acos(this.pantalla);   
+                 value = Math.acos(value);   
             }
             else{
                 //arcoseno hyperbolico asinh
-                this.pantalla = Math.acosh(this.pantalla);   
+                value = Math.acosh(value);   
             }
         }
+        return value;
     }
     botonTangente(){
         this.calcularResultado();
-        this.tangente();
+        this.pantalla = this.tangente(new Number(this.pantalla)).toString();
         this.display(); 
     }
-    tangente(){
+    tangente(value){
+        if(this.unidadAngulo == "DEG"){
+            value = this.DegToRad(value);
+        }
+        if(this.unidadAngulo == "GRAD"){
+            value = this.GradToRad(value);
+        }
         if(!this.arco){            
             if(!this.hyperbolica){
                 //seno sin                
-                this.pantalla = Math.tan(this.pantalla);                
+                value = Math.tan(value);                
             }
             else{                
                 //seno hyperbolico sinh
-                this.pantalla = Math.tanh(this.pantalla);   
+                value = Math.tanh(value);   
             }
         }else{
             if(!this.hyperbolica){
                  //arcoseno sin^-1 asin
-                 this.pantalla = Math.atan(this.pantalla);   
+                 value = Math.atan(value);   
             }
             else{
                 //arcoseno hyperbolico asinh
-                this.pantalla = Math.atanh(this.pantalla);   
+                value = Math.atanh(value);   
             }
         }
+        return value;
     }
    
     
     botonSecante(){
-        this.calcularResultado();
-        this.seno();
-        this.pantalla = (1/parseFloat(this.pantalla)).toString();
+        this.calcularResultado();        
+        this.pantalla = (1/new Number(this.seno(new Number(this.pantalla)))).toString();
         this.display(); 
     }
     botonCosecante(){
         this.calcularResultado();
-        this.coseno();
-        this.pantalla = (1/parseFloat(this.pantalla)).toString();
+        this.pantalla = (1/new Number(this.coseno(new Number(this.pantalla)))).toString();
         this.display(); 
     }
     botonCotangente(){
         this.calcularResultado();
-        this.tangente();
-        this.pantalla = (1/parseFloat(this.pantalla)).toString();
+        this.pantalla = (1/new Number(this.tangente(new Number(this.pantalla)))).toString();
         this.display(); 
     }
     botonCambioArco(){//TODO falta hacer que cambien visualmente todos
@@ -415,7 +462,7 @@ class CalculadoraCientifica extends CalculadoraBasica{
             trimmedResult = numS.substr(0, substrLength),
             finalResult = isNaN(trimmedResult) ? 0 : trimmedResult;
     
-        return parseFloat(finalResult);
+        return new Number(finalResult);
     }
     botonDms(){
 
@@ -426,12 +473,12 @@ class CalculadoraCientifica extends CalculadoraBasica{
     }
     botonInverso(){
         this.calcularResultado();
-        this.pantalla = (1/parseFloat(this.pantalla)).toString();
+        this.pantalla = (1/new Number(this.pantalla)).toString();
         this.display();
     }
     botonAbsolute(){
         this.calcularResultado();
-        this.pantalla = Math.abs(parseFloat(this.pantalla)).toString();
+        this.pantalla = Math.abs(new Number(this.pantalla)).toString();
         this.display();
     }
     botonExp(){
@@ -445,9 +492,9 @@ class CalculadoraCientifica extends CalculadoraBasica{
     botonElevadoConstante(){//TODO Cambiar esto, fatla x^3 y hacer el eval bien
         this.calcularResultado();
         if(this.cambioFunciones){
-            this.pantalla = Math.pow(parseFloat(this.pantalla),3).toString();
+            this.pantalla = Math.pow(new Number(this.pantalla),3).toString();
         }else{
-            this.pantalla = Math.pow(parseFloat(this.pantalla),2).toString();
+            this.pantalla = Math.pow(new Number(this.pantalla),2).toString();
         }        
         this.display();
     }
@@ -496,7 +543,7 @@ class CalculadoraCientifica extends CalculadoraBasica{
     }
     botonFactorial(){
         this.calcularResultado();
-        this.pantalla = parseFloat(this.pantalla);
+        this.pantalla = new Number(this.pantalla);
         let aux = 1;
         for (var i = 2; i <= this.pantalla; i++){
             aux = aux * i;
@@ -508,9 +555,9 @@ class CalculadoraCientifica extends CalculadoraBasica{
     botonDiezElevado(){
         this.calcularResultado();
         if(!this.cambioFunciones){
-            this.pantalla = Math.pow(10,parseFloat(this.pantalla)).toString();
+            this.pantalla = Math.pow(10,new Number(this.pantalla)).toString();
         }else{
-            this.pantalla = Math.pow(2,parseFloat(this.pantalla)).toString();
+            this.pantalla = Math.pow(2,new Number(this.pantalla)).toString();
         }        
         this.display();
     }
@@ -518,7 +565,7 @@ class CalculadoraCientifica extends CalculadoraBasica{
     botonLogaritmo(){
         this.calcularResultado();
         if(!this.cambioFunciones){
-            this.funcionDosOperadores = Math.log10(parseFloat(this.pantalla)).toString();
+            this.funcionDosOperadores = Math.log10(new Number(this.pantalla)).toString();
             this.pantalla = "";
         }else{
             this.pantalla = "logaritmoBaseN("+this.pantalla+",";
@@ -532,9 +579,9 @@ class CalculadoraCientifica extends CalculadoraBasica{
     botonLogNeperiano(){
         this.calcularResultado();
         if(!this.cambioFunciones){
-            this.pantalla = Math.log(parseFloat(this.pantalla)).toString();
+            this.pantalla = Math.log(new Number(this.pantalla)).toString();
         }else{
-            this.pantalla = Math.pow(Math.E,parseFloat(this.pantalla)).toString()
+            this.pantalla = Math.pow(Math.E,new Number(this.pantalla)).toString()
         }       
         this.display();
     }
