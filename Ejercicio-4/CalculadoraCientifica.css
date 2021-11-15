@@ -27,9 +27,21 @@ form {
   
   
 input[type=button] {
-    background-color: #444;
+    background-color: #666;
     color: #fff;
     font-size: 150%;
+  }
+
+input[value="MR"],input[value="MC"],input[value="MS"],input[value="M+"],input[value="M-"] {
+    background-color: #444;    
+  }
+input[value="0"],input[value="1"],input[value="2"],input[value="3"],input[value="4"],
+input[value="5"],input[value="6"],input[value="7"],input[value="8"],input[value="9"]  {
+    background-color: #777;    
+ }
+input[value="/"],input[value="+"],input[value="-"],input[value="*"]
+  {
+    background-color: #a32638;
   }
 form > textarea {
       color: green;

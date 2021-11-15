@@ -101,7 +101,15 @@ class CalculadoraBasica{
                 //Contemplamos dos casos, es un numero o '.' o no lo es
                 let char = pantallaAsString[i];
                 if(/^[0-9]$/.test(char) || char == '.'){
-                    aux += char;
+                    if(char == '.'){
+                        if(aux != ""){
+                            aux += char;
+                        }else{
+                            toEval += char
+                        }
+                    }else{
+                        aux += char;
+                    }                   
                 }else{
                     if (aux != ""){
                         toEval += "new Number(" + aux +")";
@@ -133,7 +141,20 @@ class CalculadoraCientifica extends CalculadoraBasica{
         this.arco = false;
         this.hyperbolica = false;
         this.cambioFunciones = false;
+        this.funcionDosOperadores = "";//para las funciones de dos operadores guardamos aqui el primero operador, introducimos el segundo y le damos al enter
 
+    }
+
+
+    calcularResultado(){
+        if(this.funcionDosOperadores == ""){
+            super.calcularResultado();
+        }else{
+            this.pantalla = this.funcionDosOperadores+this.pantalla+")";
+            this.funcionDosOperadores = "";
+            super.calcularResultado();
+        }
+       
     }
     //nuevas funciones de memoria
     botonMemClear(){
@@ -276,10 +297,10 @@ class CalculadoraCientifica extends CalculadoraBasica{
                 //sinh -> sinh
                 document.querySelector("input[value=sinh⁻¹]").setAttribute("value", "sinh")
                 document.querySelector("input[value=cosh⁻¹]").setAttribute("value", "cosh")
-                document.querySelector("input[value=tan⁻¹]").setAttribute("value", "tanh")
+                document.querySelector("input[value=tanh⁻¹]").setAttribute("value", "tanh")
                 document.querySelector("input[value=sech⁻¹]").setAttribute("value", "sech")
                 document.querySelector("input[value=csch⁻¹]").setAttribute("value", "csch")
-                document.querySelector("input[value=cot⁻¹]").setAttribute("value", "coth")
+                document.querySelector("input[value=coth⁻¹]").setAttribute("value", "coth")
             }else{
                 //sin -> sin
                 document.querySelector("input[value=sin⁻¹]").setAttribute("value", "sin")
@@ -317,11 +338,17 @@ class CalculadoraCientifica extends CalculadoraBasica{
             if(this.arco){
                 document.querySelector("input[value=sinh⁻¹]").setAttribute("value", "sin⁻¹")
                 document.querySelector("input[value=cosh⁻¹]").setAttribute("value", "cos⁻¹")
-                document.querySelector("input[value=tanh⁻¹]").setAttribute("value", "tan⁻¹")            
+                document.querySelector("input[value=tanh⁻¹]").setAttribute("value", "tan⁻¹")   
+                document.querySelector("input[value=sech⁻¹]").setAttribute("value", "sec⁻¹")
+                document.querySelector("input[value=csch⁻¹]").setAttribute("value", "csc⁻¹")
+                document.querySelector("input[value=coth⁻¹]").setAttribute("value", "cot⁻¹")           
             }else{
                 document.querySelector("input[value=sinh]").setAttribute("value", "sin")
                 document.querySelector("input[value=cosh]").setAttribute("value", "cos")
                 document.querySelector("input[value=tanh]").setAttribute("value", "tan")
+                document.querySelector("input[value=sech]").setAttribute("value", "sec")
+                document.querySelector("input[value=csch]").setAttribute("value", "csc")
+                document.querySelector("input[value=coth]").setAttribute("value", "cot")
             }
 
         }else{
@@ -330,10 +357,16 @@ class CalculadoraCientifica extends CalculadoraBasica{
                 document.querySelector("input[value=sin⁻¹]").setAttribute("value", "sinh⁻¹")
                 document.querySelector("input[value=cos⁻¹]").setAttribute("value", "cosh⁻¹")
                 document.querySelector("input[value=tan⁻¹]").setAttribute("value", "tanh⁻¹")  
+                document.querySelector("input[value=sec⁻¹]").setAttribute("value", "sech⁻¹")
+                document.querySelector("input[value=csc⁻¹]").setAttribute("value", "csch⁻¹")
+                document.querySelector("input[value=cot⁻¹]").setAttribute("value", "coth⁻¹")  
             }else{
                 document.querySelector("input[value=sin]").setAttribute("value", "sinh")
                 document.querySelector("input[value=cos]").setAttribute("value", "cosh")
                 document.querySelector("input[value=tan]").setAttribute("value", "tanh")
+                document.querySelector("input[value=sec]").setAttribute("value", "sech")
+                document.querySelector("input[value=csc]").setAttribute("value", "csch")
+                document.querySelector("input[value=cot]").setAttribute("value", "coth")
             }
         }
     }
@@ -403,18 +436,34 @@ class CalculadoraCientifica extends CalculadoraBasica{
             this.pantalla = Math.pow(parseFloat(this.pantalla),3).toString();
         }else{
             this.pantalla = Math.pow(parseFloat(this.pantalla),2).toString();
-        }
-        
+        }        
         this.display();
     }
     //x^y
     botonExponencial(){
-        //this.pantalla = Math.pow(eval(this.consola,2)).toString();
-        //this.primerArgumento
-        this.pantalla = "";
+        this.calcularResultado();
+        if(this.cambioFunciones){
+            this.funcionDosOperadores = "Math.pow("+this.pantalla+",";//tenemos que completar nosotros el parentesis
+            this.pantalla = "";
+        }else{
+            this.funcionDosOperadores = "this.nthroot("+this.pantalla+",";//tenemos que completar nosotros el parentesis
+            this.pantalla = "";
+        }
         this.display();
     }
     
+    //https://stackoverflow.com/questions/7308627/javascript-calculate-the-nth-root-of-a-number
+    nthroot(x, n) {
+        try {
+          var negate = n % 2 == 1 && x < 0;
+          if(negate)
+            x = -x;
+          var possible = Math.pow(x, 1 / n);
+          n = Math.pow(possible, n);
+          if(Math.abs(x - n) < 1 && (x > 0 == n > 0))
+            return negate ? -possible : possible;
+        } catch(e){}
+      }
     botonRaizCuadrada(){
         this.pantalla = Math.sqrt(eval(this.pantalla)).toString();//TODO esto deberia hacer como en calcular resulado
         this.display();
