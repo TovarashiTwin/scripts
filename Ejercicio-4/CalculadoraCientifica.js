@@ -299,12 +299,12 @@ class CalculadoraCientifica extends CalculadoraBasica{
 
     botonCeil(){
         this.calcularResultado();
-        this.pantalla = Math.ceil(this.pantalla);
+        this.pantalla = Math.ceil(this.pantalla).toString();
         this.display();
     }
     botonFloor(){
         this.calcularResultado();
-        this.pantalla = Math.floor(this.pantalla);
+        this.pantalla = Math.floor(this.pantalla).toString();
         this.display();
     }
     botonCambioFunciones(){
@@ -333,7 +333,7 @@ class CalculadoraCientifica extends CalculadoraBasica{
 
     }
     botonQuitar(){
-        this.pantalla = this.pantalla.substring(0,this.pantalla.length-1)
+        this.pantalla = (this.pantalla).toString().substring(0,this.pantalla.length-1)
         this.display();
     }
     botonInverso(){
@@ -355,7 +355,8 @@ class CalculadoraCientifica extends CalculadoraBasica{
 
     //x^2 y x^3
     botonElevadoConstante(){//TODO Cambiar esto, fatla x^3 y hacer el eval bien
-        this.pantalla = Math.pow(eval(this.consola,2)).toString();
+        this.calcularResultado();
+        this.pantalla = Math.pow(parseFloat(this.pantalla),2).toString();
         this.display();
     }
     //x^y
