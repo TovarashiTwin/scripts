@@ -272,8 +272,19 @@ class CalculadoraCientifica extends CalculadoraBasica{
     botonCambioArco(){//TODO falta hacer que cambien visualmente todos
         if(this.arco){
             this.arco = false;
+            if(this.hyperbolica){
+                //sinh -> sinh 
+            }else{
+                //sin -> sin
+            }
         }else{
             this.arco = true;
+            if(this.hyperbolica){
+                //asinh sinh^-1 
+                
+            }else{
+                //asin sin^-1
+            }
         }
     }
     botonCambioHyperbolic(){
