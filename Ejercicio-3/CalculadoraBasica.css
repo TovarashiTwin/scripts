@@ -1,14 +1,11 @@
-/*
-* El cuerpo de la calculadora
-*/
 body {   
     align-self: center;
   }
-  
-
+h1 {
+    text-align: center;    
+}
 form {        
-    display: grid;  
-    /*grid-template-columns: 25% 25% 25% 25%;*/
+    display: grid;    
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 5px;
     background-color: #fff;
@@ -23,13 +20,19 @@ form {
     background-color: #909497;
     border-radius: 25px;
   }
-  
-  
 input[type=button] {
-    background-color: #444;
+    background-color: #666;
     color: #fff;
     font-size: 150%;
   }
+input[value="MRC"],input[value="M+"],input[value="M-"]
+{
+  background-color: #444;
+}
+input[value="/"],input[value="+"],input[value="-"],input[value="*"]
+{
+  background-color: darkred;
+}
 form > textarea {
       color: green;
       text-align: center;
@@ -37,6 +40,3 @@ form > textarea {
       grid-column-start: 1;
       grid-column-end: 5;
   }
-  h1 {
-    text-align: center;    
-}
