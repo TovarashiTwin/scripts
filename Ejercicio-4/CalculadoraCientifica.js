@@ -387,7 +387,7 @@ class CalculadoraCientifica extends CalculadoraBasica{
         if(this.cambioFunciones){
             this.cambioFunciones = false;
             document.querySelector("input[value=x³]").setAttribute("value", "x²")
-            document.querySelector("input[value=²√x]").setAttribute("value", "³√x")
+            document.querySelector("input[value=³√x]").setAttribute("value", "²√x")
             document.querySelector("input[value=ʸ√x]").setAttribute("value", "xʸ")
             document.getElementById("elevadoX").setAttribute("value", "10ˣ")//fui incapaz de conseguir que me seleccionase bien ni espando con octales, ni decimales ni unicode :')
             document.querySelector("input[value=logᵧx]").setAttribute("value", "log")
@@ -395,7 +395,7 @@ class CalculadoraCientifica extends CalculadoraBasica{
         }else{
             this.cambioFunciones = true;
             document.querySelector("input[value=x²]").setAttribute("value", "x³")
-            document.querySelector("input[value=³√x]").setAttribute("value", "²√x")
+            document.querySelector("input[value=²√x]").setAttribute("value", "³√x")
             document.querySelector("input[value=xʸ]").setAttribute("value", "ʸ√x")
             document.getElementById("elevadoX").setAttribute("value", "2ˣ")
             document.querySelector("input[value=log]").setAttribute("value", "logᵧx")
@@ -451,7 +451,7 @@ class CalculadoraCientifica extends CalculadoraBasica{
         }        
         this.display();
     }
-    //x^y
+    //x^y y yraizx
     botonExponencial(){
         this.calcularResultado();
         if(!this.cambioFunciones){
@@ -476,6 +476,8 @@ class CalculadoraCientifica extends CalculadoraBasica{
             return negate ? -possible : possible;
         } catch(e){}
       }
+
+      //raiz cuadrada y cubica
     botonRaizCuadrada(){
         this.pantalla = Math.sqrt(eval(this.pantalla)).toString();//TODO esto deberia hacer como en calcular resulado
         this.display();
@@ -502,19 +504,38 @@ class CalculadoraCientifica extends CalculadoraBasica{
         this.pantalla = aux.toString();
         this.display();
     }
+    //10^x 2^x
     botonDiezElevado(){
         this.calcularResultado();
-        this.pantalla = Math.pow(10,parseFloat(this.pantalla)).toString();
+        if(!this.cambioFunciones){
+            this.pantalla = Math.pow(10,parseFloat(this.pantalla)).toString();
+        }else{
+            this.pantalla = Math.pow(2,parseFloat(this.pantalla)).toString();
+        }        
         this.display();
     }
+    //log y logy x
     botonLogaritmo(){
         this.calcularResultado();
-        this.pantalla = Math.log10(parseFloat(this.pantalla)).toString();
+        if(!this.cambioFunciones){
+            this.funcionDosOperadores = Math.log10(parseFloat(this.pantalla)).toString();
+            this.pantalla = "";
+        }else{
+            this.pantalla = "logaritmoBaseN("+this.pantalla+",";
+        }
         this.display();
     }
+    logaritmoBaseN(x,n){//Aplicaremos la propiedad de cambio de base de los logaritmos
+        return Math.log(x)/Math.log(n);
+    }
+    //ln y e^x
     botonLogNeperiano(){
         this.calcularResultado();
-        this.pantalla = Math.log(parseFloat(this.pantalla)).toString();
+        if(!this.cambioFunciones){
+            this.pantalla = Math.log(parseFloat(this.pantalla)).toString();
+        }else{
+            this.pantalla = Math.pow(Math.E,parseFloat(this.pantalla)).toString()
+        }       
         this.display();
     }
 }
