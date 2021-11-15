@@ -385,9 +385,21 @@ class CalculadoraCientifica extends CalculadoraBasica{
     }
     botonCambioFunciones(){
         if(this.cambioFunciones){
-            this.cambioFunciones = true;
-        }else{
             this.cambioFunciones = false;
+            document.querySelector("input[value=x³]").setAttribute("value", "x²")
+            document.querySelector("input[value=²√x]").setAttribute("value", "³√x")
+            document.querySelector("input[value=ʸ√x]").setAttribute("value", "xʸ")
+            document.getElementById("elevadoX").setAttribute("value", "10ˣ")//fui incapaz de conseguir que me seleccionase bien ni espando con octales, ni decimales ni unicode :')
+            document.querySelector("input[value=logᵧx]").setAttribute("value", "log")
+            document.querySelector("input[value=eˣ]").setAttribute("value", "ln")
+        }else{
+            this.cambioFunciones = true;
+            document.querySelector("input[value=x²]").setAttribute("value", "x³")
+            document.querySelector("input[value=³√x]").setAttribute("value", "²√x")
+            document.querySelector("input[value=xʸ]").setAttribute("value", "ʸ√x")
+            document.getElementById("elevadoX").setAttribute("value", "2ˣ")
+            document.querySelector("input[value=log]").setAttribute("value", "logᵧx")
+            document.querySelector("input[value=ln]").setAttribute("value", "eˣ")
         }
     }
     botonPi(){
@@ -442,7 +454,7 @@ class CalculadoraCientifica extends CalculadoraBasica{
     //x^y
     botonExponencial(){
         this.calcularResultado();
-        if(this.cambioFunciones){
+        if(!this.cambioFunciones){
             this.funcionDosOperadores = "Math.pow("+this.pantalla+",";//tenemos que completar nosotros el parentesis
             this.pantalla = "";
         }else{
