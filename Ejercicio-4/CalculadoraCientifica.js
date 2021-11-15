@@ -273,25 +273,68 @@ class CalculadoraCientifica extends CalculadoraBasica{
         if(this.arco){
             this.arco = false;
             if(this.hyperbolica){
-                //sinh -> sinh 
+                //sinh -> sinh
+                document.querySelector("input[value=sinh⁻¹]").setAttribute("value", "sinh")
+                document.querySelector("input[value=cosh⁻¹]").setAttribute("value", "cosh")
+                document.querySelector("input[value=tan⁻¹]").setAttribute("value", "tanh")
+                document.querySelector("input[value=sech⁻¹]").setAttribute("value", "sech")
+                document.querySelector("input[value=csch⁻¹]").setAttribute("value", "csch")
+                document.querySelector("input[value=cot⁻¹]").setAttribute("value", "coth")
             }else{
                 //sin -> sin
+                document.querySelector("input[value=sin⁻¹]").setAttribute("value", "sin")
+                document.querySelector("input[value=cos⁻¹]").setAttribute("value", "cos")
+                document.querySelector("input[value=tan⁻¹]").setAttribute("value", "tan")
+                document.querySelector("input[value=sec⁻¹]").setAttribute("value", "sec")
+                document.querySelector("input[value=csc⁻¹]").setAttribute("value", "csc")
+                document.querySelector("input[value=cot⁻¹]").setAttribute("value", "cot")
             }
         }else{
             this.arco = true;
             if(this.hyperbolica){
-                //asinh sinh^-1 
+                //asinh sinh^-1
+                document.querySelector("input[value=sinh]").setAttribute("value", "sinh⁻¹")
+                document.querySelector("input[value=cosh]").setAttribute("value", "cosh⁻¹")
+                document.querySelector("input[value=tanh]").setAttribute("value", "tanh⁻¹")
+                document.querySelector("input[value=sech]").setAttribute("value", "sech⁻¹")
+                document.querySelector("input[value=csch]").setAttribute("value", "csch⁻¹")
+                document.querySelector("input[value=coth]").setAttribute("value", "coth⁻¹")
                 
             }else{
                 //asin sin^-1
+                document.querySelector("input[value=sin]").setAttribute("value", "sin⁻¹")
+                document.querySelector("input[value=cos]").setAttribute("value", "cos⁻¹")
+                document.querySelector("input[value=tan]").setAttribute("value", "tan⁻¹")
+                document.querySelector("input[value=sec]").setAttribute("value", "sec⁻¹")
+                document.querySelector("input[value=csc]").setAttribute("value", "csc⁻¹")
+                document.querySelector("input[value=cot]").setAttribute("value", "cot⁻¹")
             }
         }
     }
-    botonCambioHyperbolic(){
+    botonCambioHyperbolico(){
         if(this.hyperbolica){
             this.hyperbolica = false;
+            if(this.arco){
+                document.querySelector("input[value=sinh⁻¹]").setAttribute("value", "sin⁻¹")
+                document.querySelector("input[value=cosh⁻¹]").setAttribute("value", "cos⁻¹")
+                document.querySelector("input[value=tanh⁻¹]").setAttribute("value", "tan⁻¹")            
+            }else{
+                document.querySelector("input[value=sinh]").setAttribute("value", "sin")
+                document.querySelector("input[value=cosh]").setAttribute("value", "cos")
+                document.querySelector("input[value=tanh]").setAttribute("value", "tan")
+            }
+
         }else{
             this.hyperbolica = true;
+            if(this.arco){
+                document.querySelector("input[value=sin⁻¹]").setAttribute("value", "sinh⁻¹")
+                document.querySelector("input[value=cos⁻¹]").setAttribute("value", "cosh⁻¹")
+                document.querySelector("input[value=tan⁻¹]").setAttribute("value", "tanh⁻¹")  
+            }else{
+                document.querySelector("input[value=sin]").setAttribute("value", "sinh")
+                document.querySelector("input[value=cos]").setAttribute("value", "cosh")
+                document.querySelector("input[value=tan]").setAttribute("value", "tanh")
+            }
         }
     }
 
@@ -356,7 +399,12 @@ class CalculadoraCientifica extends CalculadoraBasica{
     //x^2 y x^3
     botonElevadoConstante(){//TODO Cambiar esto, fatla x^3 y hacer el eval bien
         this.calcularResultado();
-        this.pantalla = Math.pow(parseFloat(this.pantalla),2).toString();
+        if(this.cambioFunciones){
+            this.pantalla = Math.pow(parseFloat(this.pantalla),3).toString();
+        }else{
+            this.pantalla = Math.pow(parseFloat(this.pantalla),2).toString();
+        }
+        
         this.display();
     }
     //x^y
