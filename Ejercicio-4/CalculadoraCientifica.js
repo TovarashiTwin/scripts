@@ -203,13 +203,29 @@ class CalculadoraCientifica extends CalculadoraBasica{
 
     }
     botonRand(){
-
+        this.pantalla += Math.random();
+        this.display();
     }
     botonDms(){
-
+        console.log("dms");
+        this.calcularResultado();
+        let value = new Number(this.pantalla)*3600;
+        let grados = Math.floor(value/3600).toString();
+        let minutos = Math.floor((value%3600)/60).toString();
+        let segundos = Math.floor((value%3600)%60).toString();
+        if(minutos.length == 1){
+            minutos = "0"+minutos;
+        }
+        if(segundos.length == 1){
+            segundos = "0"+segundos;
+        }
+        this.pantalla = grados+","+minutos+segundos;
+        this.display();
     }
     botonDeg(){
+        this.calcularResultado();
 
+        this.display();
     }
     //FUNCIONES TRIGONOMETRICAS
     //sin sinh y sin^-1
@@ -454,6 +470,11 @@ class CalculadoraCientifica extends CalculadoraBasica{
         this.pantalla += this.truncateDecimals(Math.PI,4);
         this.display();
     }
+    botonE(){
+        //podia haber hardcodeado el numero pi truncado pero me parecia más flexible hacerlo de esta manera
+        this.pantalla += this.truncateDecimals(Math.E,4);
+        this.display();
+    }
     //https://stackoverflow.com/questions/4912788/truncate-not-round-off-decimal-numbers-in-javascript
     truncateDecimals (num, digits) {
         var numS = num.toString(),
@@ -464,9 +485,7 @@ class CalculadoraCientifica extends CalculadoraBasica{
     
         return new Number(finalResult);
     }
-    botonDms(){
-
-    }
+    
     botonQuitar(){
         this.pantalla = (this.pantalla).toString().substring(0,this.pantalla.length-1)
         this.display();
