@@ -223,8 +223,23 @@ class CalculadoraCientifica extends CalculadoraBasica{
         this.display();
     }
     botonDeg(){
-        this.calcularResultado();
-
+        this.calcularResultado();    
+        let numero = this.pantalla.split(".")
+        let toReturn = numero[0]+"."
+        if(numero[1].length > 1){
+            if(numero[1].length == 1){//solo tenemos minutos
+                toReturn += (new Number(numero[1]+"0") / 60).toString().split(".")[1];
+            }else if(numero[1].length == 2){
+                toReturn += (new Number(numero[1]) / 60).toString().split(".")[1];
+            }
+            else{//tenemos segundos                
+                let decimalesGrandes = (new Number(numero[1].substring(0,2)) / 60);
+                let decimalesChikitos = (new Number(numero[1].substring(2,numero[1].length)) / 3600);
+                toReturn += (decimalesGrandes + decimalesChikitos).toString().split(".")[1];
+            }
+           
+        }
+        this.pantalla = toReturn;
         this.display();
     }
     //FUNCIONES TRIGONOMETRICAS
@@ -504,7 +519,8 @@ class CalculadoraCientifica extends CalculadoraBasica{
 
     }
     botonMod(){
-
+        this.pantalla+="%";
+        this.display(); 
     }
 
     //x^2 y x^3
