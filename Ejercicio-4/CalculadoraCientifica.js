@@ -600,10 +600,11 @@ class CalculadoraCientifica extends CalculadoraBasica{
     botonLogaritmo(){
         this.calcularResultado();
         if(!this.cambioFunciones){
-            this.funcionDosOperadores = Math.log10(new Number(this.pantalla)).toString();
-            this.pantalla = "";
+            this.pantalla = Math.log10(new Number(this.pantalla)).toString();
+            
         }else{
-            this.pantalla = "logaritmoBaseN("+this.pantalla+",";
+            this.funcionDosOperadores = "this.logaritmoBaseN("+this.pantalla+",";
+            this.pantalla = "";
         }
         this.display();
     }
