@@ -25,12 +25,13 @@ class LectorArchivos{
             }	  
         }
         
-        document.getElementById("numero").innerHTML = nFiles;
+        document.getElementById("numero").innerHTML = document.getElementById("numero").innerHTML + nFiles;
+        document.getElementById("tamano").innerHTML = document.getElementById("tamano").innerHTML+ this.nBytes + "bytes";
         document.getElementById("datos").innerHTML = "<h2>Datos:</h2>"+this.datos;
         setTimeout(() => {
             document.getElementById("contenidos").innerText = this.contenido;
         }, 100);
-        document.getElementById("tamano").innerHTML = this.nBytes + "bytes";
+        
     }
 
 }

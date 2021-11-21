@@ -15,9 +15,10 @@
 <body>
     <h1>Ejercicio 12</h1>
     <header>
-		<p><input id="inputArchivos" type="file" name="Archivos" onchange="lector.leerArchivos()" multiple></p>
-		<p>Número de archivos: <span id="numero">0</span></p>
-		<p>Tamaño de los archivos: <span id="tamano">0</span></p>
+		
+        <input id="inputArchivos" type="file" name="Archivos" onchange="lector.leerArchivos()" multiple>
+		<p id="numero">Número de archivos:</p>
+		<p id="tamano">Tamaño de los archivos:</p>
 	</header>
 	<section id="datos"></section>
 	<pre id="contenidos"></pre>
