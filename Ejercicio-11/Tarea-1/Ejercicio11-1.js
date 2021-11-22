@@ -1,5 +1,5 @@
 "use strict"
-class Geolocation{
+class Geolocalization{
     constructor (){
         navigator.geolocation.getCurrentPosition(this.cargarUbicacion.bind(this));
         this.datos = "";
@@ -20,7 +20,7 @@ class Geolocation{
     }
 }
 
-var localizacion = new Geolocation();
+var localizacion = new Geolocalization();
 
 
 
