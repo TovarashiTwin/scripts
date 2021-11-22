@@ -29,12 +29,10 @@ class Map{
          zoom: this.zoom // Specify the starting zoom
         });
        const marker1 = new mapboxgl.Marker()
-           .setLngLat(this.center)
+           .setLngLat(center)
            .addTo(map);
     }
-    ponerUsuario(){
-
-    }
+    
 }
 // function init(){//preguntar por esto
 //     var mapa = new Map();
