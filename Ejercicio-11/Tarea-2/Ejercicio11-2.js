@@ -1,7 +1,7 @@
 "use strict"
 class Geolocation{
     constructor (){
-        navigator.geolocation.getCurrentPosition(this.cargarUbicacion.bind(this));
+        navigator.geolocation.getCurrentPosition(this.cargarUbicacion.bind(this),this.verErrores.bind(this));
         this.datos = "";
     }
     cargarUbicacion(posicion){
@@ -14,6 +14,22 @@ class Geolocation{
         this.datos+="<p>Rumbo: " + posicion.coords.heading+" grados</p>";
         this.datos+="<p>Velocidad: " + posicion.coords.speed + " metros/segundo</p>";
        
+    }
+    verErrores(error){
+        switch(error.code) {
+            case error.PERMISSION_DENIED:
+                alert("Se ha denegado la peticion de geolocalizacion por el usuario");
+                break;
+            case error.POSITION_UNAVAILABLE:
+                alert("Geolocalización no disponible")
+                break;
+            case error.TIMEOUT:
+                alert("La petición de geolocalización ha caducado");
+                break;
+            case error.UNKNOWN_ERROR:
+                alert("Se ha producido un error desconocido");
+                break;
+            }
     }
     verPosicion(){
         document.getElementById('ubicacion').innerHTML=this.datos;
@@ -51,7 +67,7 @@ var localizacion = new Geolocation();
 //     getAltitud(){
 //         return this.altitud;
 //     }
-//     verPosicion(dondeVerlo){
+//     verTodo(dondeVerlo){
 //         var ubicacion=document.getElementById(dondeVerlo);
 //         var datos=''; 
 //         datos+='<p>Longitud: '+this.longitud +' grados</p>'; 
@@ -64,10 +80,10 @@ var localizacion = new Geolocation();
 //         ubicacion.innerHTML = datos;
 //     }
 // }
-// var localizacion = new Geolocalización();
+
 
 // function init(){
-//     var localizacion = new Geolocalización();
-//     localizacion.verTodo("ubicacion");
+//     var miPosicion = new Geolocalización();
+//     miPosicion.verTodo("ubicacion");
 // }
 // onload = init;
