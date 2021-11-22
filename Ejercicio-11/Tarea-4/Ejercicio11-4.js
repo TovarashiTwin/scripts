@@ -7,7 +7,7 @@ class Map{
         this.center = [-3.7344397656591397, 40.43341788237872];
         this.zoom = 4;
     }
-    mostrarMapaDinamico(){
+    mostrarMapaDinamico(){       
         mapboxgl.accessToken = this.apiKey;
         const map = new mapboxgl.Map({
           container: this.container, // Specify the container ID
@@ -20,12 +20,13 @@ class Map{
             .addTo(map);
     }     
 }
-function init(){
-    var mapa = new Map();
-    mapa.mostrarMapaDinamico();    
-};
-onload = init;
+// function init(){
+//     var mapa = new Map();
+//     mapa.mostrarMapaDinamico();    
+// };
+// onload = init;
 
-
+var mapa = new Map();
+// onload = mapa.mostrarMapaDinamico; 
 // var mapa = new Map();
 // mapa.mostrarMapaDinamico()
