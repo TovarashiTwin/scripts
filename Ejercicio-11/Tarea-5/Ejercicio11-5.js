@@ -9,7 +9,7 @@ class Map{
         this.container = "map";//la id del tag donde vamos a meter el mapa
         this.mapStyle = "mapbox://styles/mapbox/outdoors-v11";
         // this.center = [-3.7344397656591397, 40.43341788237872];
-        this.zoom = 4;
+        this.zoom = 10;
         this.longitude = -3.7344397656591397;//valor por defecto si el usaurio no da su posicion
         this.latitude = 40.43341788237872;
 

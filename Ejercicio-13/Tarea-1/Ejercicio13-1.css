@@ -18,11 +18,7 @@ body {
 }
 
 /* Cambiar por otro selector y tamaño fijo */
-main { 
-    /* position:absolute; 
-    top:0; 
-    bottom:0;
-    width:100%;  */
-    width: 400px; 
-    height: 300px;
+main {    
+    width: 600px; 
+    height: 500px;
 }
