@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+<Style id="nacimiento"><IconStyle><Icon><href>http://maps.google.com/mapfiles/kml/pushpin/grn-pushpin.png</href></Icon></IconStyle></Style>
+<Style id="fallecimiento"><IconStyle><Icon><href>http://maps.google.com/mapfiles/kml/pushpin/red-pushpin.png</href></Icon></IconStyle></Style>
+<Placemark>
+<name>Manuel Lorenzo Vega</name>
+<styleUrl>#nacimiento</styleUrl><description>Fecha nacimiento: 1999-01-23</description>
+<Point>
+<coordinates>-3.7344397656591397, 40.43341788237872, 595</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Alberto Lorenzo Álvarez</name>
+<styleUrl>#nacimiento</styleUrl><description>Fecha nacimiento: 1963-01-08</description>
+<Point>
+<coordinates>-5.830170059192873, 43.37530326395324, 208</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Felipe Lorenzo Mohamed</name>
+<styleUrl>#nacimiento</styleUrl><description>Fecha nacimiento: 1940-11-17</description>
+<Point>
+<coordinates>-4.989371610033474, 37.70948700592726, 174</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Alejandro Lorenzo Badiola</name>
+<styleUrl>#nacimiento</styleUrl><description>Fecha nacimiento: 1913-03-30</description>
+<Point>
+<coordinates>-3.488908375884684, 42.93894780573726, 585</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Alejandro Lorenzo Badiola</name>
+<styleUrl>#fallecimiento</styleUrl><description>Fecha fallecimiento: 1978-09-28</description>
+<Point>
+<coordinates>-5.899418998113955, 42.29872161823146, 779</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Magdalena Mohamed Molinero</name>
+<styleUrl>#nacimiento</styleUrl><description>Fecha nacimiento: 1910-05-01</description>
+<Point>
+<coordinates>-4.676865556868358, 40.658717640218434, 1137</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Magdalena Mohamed Molinero</name>
+<styleUrl>#fallecimiento</styleUrl><description>Fecha fallecimiento: 1959-03-14</description>
+<Point>
+<coordinates>-4.661815132980382, 40.75226696521233, 1034</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Maricarmen Álvarez Pendragon</name>
+<styleUrl>#nacimiento</styleUrl><description>Fecha nacimiento: 1942-05-14</description>
+<Point>
+<coordinates>-5.640656849717557, 41.750113515618615, 684</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Domingo Álvarez Corral</name>
+<styleUrl>#nacimiento</styleUrl><description>Fecha nacimiento: 1918-08-04</description>
+<Point>
+<coordinates>-6.544766049031055, 43.178545480806754, 352</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Domingo Álvarez Corral</name>
+<styleUrl>#fallecimiento</styleUrl><description>Fecha fallecimiento: 1988-11-25</description>
+<Point>
+<coordinates>-6.03849541081205, 42.46388116123176, 871</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Alejandra Pendragon Arturez</name>
+<styleUrl>#nacimiento</styleUrl><description>Fecha nacimiento: 1915-12-24</description>
+<Point>
+<coordinates>-4.110044995699699, 41.293634596741335, 903</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Alejandra Pendragon Arturez</name>
+<styleUrl>#fallecimiento</styleUrl><description>Fecha fallecimiento: 1967-01-16</description>
+<Point>
+<coordinates>-4.317549797589234, 41.40000222912337, 852</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Camila Vega Carbone</name>
+<styleUrl>#nacimiento</styleUrl><description>Fecha nacimiento: 1975-06-15</description>
+<Point>
+<coordinates>2.238060495548925, 41.464645869229706, 27</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Adolfo Vega Suarez</name>
+<styleUrl>#nacimiento</styleUrl><description>Fecha nacimiento: 1932-11-21</description>
+<Point>
+<coordinates>-56.91285028841446, -33.51852807015989, 141</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Adolfo Vega Suarez</name>
+<styleUrl>#fallecimiento</styleUrl><description>Fecha fallecimiento: 2020-06-08</description>
+<Point>
+<coordinates>126.97996214126253, 37.56877715936732, 12</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Diamantino Vega Delgado</name>
+<styleUrl>#nacimiento</styleUrl><description>Fecha nacimiento: 1906-04-18</description>
+<Point>
+<coordinates>-2.8465975526754232, 42.58532867599524, 472</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Diamantino Vega Delgado</name>
+<styleUrl>#fallecimiento</styleUrl><description>Fecha fallecimiento: 1956-10-11</description>
+<Point>
+<coordinates>-2.9342701669245717, 42.68702431631258, 472</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Helena Suarez Cabrero</name>
+<styleUrl>#nacimiento</styleUrl><description>Fecha nacimiento: 1908-09-09</description>
+<Point>
+<coordinates>-2.9012543200279444, 42.714266593756115, 487</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Helena Suarez Cabrero</name>
+<styleUrl>#fallecimiento</styleUrl><description>Fecha fallecimiento: 1932-11-21</description>
+<Point>
+<coordinates>-2.9342701669245717, 42.68702431631258, 472</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Ana Carbone Benitez</name>
+<styleUrl>#nacimiento</styleUrl><description>Fecha nacimiento: 1930-08-14</description>
+<Point>
+<coordinates>-52.67595195186193, -31.399024108806675, 407</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Ana Carbone Benitez</name>
+<styleUrl>#fallecimiento</styleUrl><description>Fecha fallecimiento: 2008-06-02</description>
+<Point>
+<coordinates>-5.799744873048418, 43.37871749648649, 183</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Benito Carbone Silva</name>
+<styleUrl>#nacimiento</styleUrl><description>Fecha nacimiento: 1903-04-05</description>
+<Point>
+<coordinates>-5.583938750921723, 40.8838501132761, 864</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Benito Carbone Silva</name>
+<styleUrl>#fallecimiento</styleUrl><description>Fecha fallecimiento: 1936-11-07</description>
+<Point>
+<coordinates>-5.660368641176782, 40.96903408456835, 788</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Esther Benitez Casillas</name>
+<styleUrl>#nacimiento</styleUrl><description>Fecha nacimiento: 1906-02-28</description>
+<Point>
+<coordinates>-5.659126436438319, 40.861264102103505, 877</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Esther Benitez Casillas</name>
+<styleUrl>#fallecimiento</styleUrl><description>Fecha fallecimiento: 1975-06-15</description>
+<Point>
+<coordinates>-5.647563614311447, 40.93080200601295, 794</coordinates>
+</Point>
+</Placemark>
+</Document>
+</kml>
