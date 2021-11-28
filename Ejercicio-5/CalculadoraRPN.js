@@ -14,7 +14,10 @@ class Stack{
         if (this.items.length == 0) 
             return "Underflow"; 
         return this.items.pop(); 
-    } 
+    }
+    length(){
+        return this.items.length;
+    }
     displayFila(){
         var result = "";
 		for(var i in this.items)
@@ -42,35 +45,46 @@ class CalculadoraRPN{
     }
 
     botonSuma(){
-        var param1 = parseFloat(this.theStack.pop());
-        var param2 = parseFloat(this.theStack.pop());
-        this.theStack.push(param2 + param1);
-        this.mostrarPila();
+        if(this.theStack.length() >= 2){
+            var param1 = parseFloat(this.theStack.pop());
+            var param2 = parseFloat(this.theStack.pop());
+            this.theStack.push(param2 + param1);
+            this.mostrarPila();
+        }
+       
     }
     botonResta(){
-        var param1 = parseFloat(this.theStack.pop());
-        var param2 = parseFloat(this.theStack.pop());
-        this.theStack.push(param2 - param1);
-        this.mostrarPila();
+        if(this.theStack.length() >= 2){
+            var param1 = parseFloat(this.theStack.pop());
+            var param2 = parseFloat(this.theStack.pop());
+            this.theStack.push(param2 - param1);
+            this.mostrarPila();
+        }
     }
     botonDivision(){
-        var param1 = parseFloat(this.theStack.pop());
-        var param2 = parseFloat(this.theStack.pop());
-        this.theStack.push(param2 / param1);
-        this.mostrarPila();
+        if(this.theStack.length() >= 2){
+            var param1 = parseFloat(this.theStack.pop());
+            var param2 = parseFloat(this.theStack.pop());
+            this.theStack.push(param2 / param1);
+            this.mostrarPila();
+        }
     }
     botonMultiplicacion(){
-        var param1 = parseFloat(this.theStack.pop());
-        var param2 = parseFloat(this.theStack.pop());
-        this.theStack.push(param2 * param1);
-        this.mostrarPila();
+        if(this.theStack.length() >= 2){
+            var param1 = parseFloat(this.theStack.pop());
+            var param2 = parseFloat(this.theStack.pop());
+            this.theStack.push(param2 * param1);
+            this.mostrarPila();
+        }
     }
     
     botonPotenciaDeX(){
-        var param1 = parseFloat(this.theStack.pop());
-        var param2 = parseFloat(this.theStack.pop());
-        this.theStack.push(Math.pow(param2,param1));
-        this.mostrarPila();
+        if(this.theStack.length() >= 2){{}
+            var param1 = parseFloat(this.theStack.pop());
+            var param2 = parseFloat(this.theStack.pop());
+            this.theStack.push(Math.pow(param2,param1));
+            this.mostrarPila();
+        }
     }
     // botonPotenciaDeDos(){
     //     var param1 = parseFloat(this.theStack.pop());       
