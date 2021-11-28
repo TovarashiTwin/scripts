@@ -17,12 +17,12 @@ class LectorArchivos{
             if (files[i].type.match(/text.*/) || files[i].type.match("application/json") || files[i].type.match("text/xml")) {
                 let lector = new FileReader();
                 lector.readAsText(files[i]);
-                var thisObject = this;
+                var self = this;
                 lector.onload = function (evento) {
                     text = lector.result;
-                    thisObject.contenido += "\n\nArchivo " + (i+1) + ":\n" + text;
+                    self.contenido += "\n\nArchivo " + (i+1) + ":\n" + text;
                 }
-            }	  
+            }
         }
         
         document.getElementById("numero").innerHTML = document.getElementById("numero").innerHTML + nFiles;

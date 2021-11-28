@@ -1,3 +1,9 @@
+
+h1{
+    color: #7e122f;
+    text-transform: uppercase;
+}
+
 body { margin:0; padding:0; }
 main{
     /* position: absolute;

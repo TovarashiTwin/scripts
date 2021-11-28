@@ -15,8 +15,10 @@
     
 </head>
 
-<body onload="mapa.mostrarMapa()">
+<body>
     <h1>Ejercicio 13-2</h1>
+    <label for="inputArchivos">Selecciona un archivo GeoJSON</label>
+    <input id="inputArchivos" type="file" name="Archivos" onchange="mapa.cargarMapa()">
     <main id='map'></main>  
 </body>
 
