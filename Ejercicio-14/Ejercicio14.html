@@ -9,11 +9,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>Ejercicio</title>
     <link rel="stylesheet" type="text/css" href="Ejercicio14.css"/>
+    <script src="Ejercicio14.js"></script>
 </head>
 
-<body>
-    <h1>Ejercicio 14</h1>
-
+<body onload="svgVisualizer.mostrarSVG()">
+    <h1>Ejercicio 14 Visualizador de SVGs</h1>
+    <label for="inputArchivos">Selecciona un archivo svg</label>
+    <input id="inputArchivos" type="file" name="Archivos" onchange="svgVisualizer.leerSVG()">
+   
+    <main></main>
     
 </body>
 
