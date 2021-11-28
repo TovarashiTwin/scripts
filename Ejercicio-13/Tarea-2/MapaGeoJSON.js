@@ -9,9 +9,7 @@ class Map{
     }
     cargarMapa(){       
         //LEEMOS EL FICHERO
-        let file = document.getElementById("inputArchivos").files[0];
-        //TODO meter que solo acepte geojson
-        console.log(file.type);
+        let file = document.getElementById("inputArchivos").files[0];        
         let lector = new FileReader();
         lector.readAsText(file);
         var self = this;

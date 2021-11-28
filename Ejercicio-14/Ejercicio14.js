@@ -21,8 +21,7 @@ class SVGVisualizer{
             localStorage.clear();
             localStorage.setItem("svg",this.svg);
             document.querySelector("main").innerHTML = this.svg;
-        }
-        
+        }       
     }
     
 
