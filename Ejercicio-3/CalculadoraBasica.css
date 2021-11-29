@@ -21,7 +21,7 @@ form {
     background-color: #909497;
     border-radius: 25px;
   }
-input[type=button] {
+input[type=button],input[type=submit] {
     background-color: #666;
     color: #fff;
     font-size: 150%;

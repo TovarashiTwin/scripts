@@ -26,7 +26,7 @@ form {
   }
   
   
-input[type=button] {
+input[type=button],input[type=submit] {
     background-color: #666;
     color: #fff;
     font-size: 150%;
