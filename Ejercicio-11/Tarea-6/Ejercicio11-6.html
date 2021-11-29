@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8" />
+    <!-- <meta name="author" content="uo265009" /> -->
+    <!-- <meta name="description" content="Pagina web para la asignatura de Software y Estándares para la Web"/> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Ejercicio 11-6</title>
+    <link rel="stylesheet" type="text/css" href="Ejercicio11-6.css"/>   
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.6.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.6.0/mapbox-gl.css' rel='stylesheet' />
+    <script src= "Ejercicio11-6.js"></script>
+</head>
+
+<body onload="mapa.mostrarMapaDinamico()">    
+
+    <h1>Ejercicio 11-6</h1>
+    <p>Mapa dinamico centrado en Oviedo</p>
+    <input type="button" value="Gijón" onclick="mapa.localizacion('Gijón')"/>
+    <input type="button" value="Oviedo" onclick="mapa.localizacion('Oviedo')"/>
+    <input type="button" value="Avilés" onclick="mapa.localizacion('Avilés')"/>
+    <input type="button" value="Siero" onclick="mapa.localizacion('Siero')"/>
+    <input type="button" value="Langreo" onclick="mapa.localizacion('Langreo')"/>
+    <input type="button" value="Mieres" onclick="mapa.localizacion('Mieres')"/>
+    <input type="button" value="Castrillón" onclick="mapa.localizacion('Castrillón')"/>
+    <input type="button" value="San Martín del Rey Aurelio" onclick="mapa.localizacion('San Martín del Rey Aurelio')"/>
+    <input type="button" value="Corvera de Asturias" onclick="mapa.localizacion('Corvera de Asturias')"/>
+    <input type="button" value="Villaviciosa" onclick="mapa.localizacion('Villaviciosa')"/>
+    <main id='map'></main>
+    
+    
+</body>
+
+</html>
