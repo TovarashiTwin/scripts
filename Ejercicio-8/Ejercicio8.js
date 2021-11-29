@@ -38,9 +38,9 @@ class Tiempo{
         titulo.append(nombre);
         lugarLista.append(titulo);
         
-        var img = $('<img />', {src: "http://openweathermap.org/img/w/"+ this.datos.weather[0].icon  + ".png",alt: this.datos.weather[0].main});
+        var img = $('<img />', {src: "http://openweathermap.org/img/w/"+ this.datos.weather[0].icon  + ".png",alt: lugar+"-"+this.datos.weather[0].main});
         let tiempoGeneral = document.createTextNode(this.datos.weather[0].description);
-        let tTiempo = $(document.createElement("h3"));
+        let tTiempo = $(document.createElement("p"));
         tTiempo.append(img);
         tTiempo.append(tiempoGeneral);
         lugarLista.append(tTiempo);

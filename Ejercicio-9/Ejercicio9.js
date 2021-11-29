@@ -39,7 +39,7 @@ class Tiempo{
         titulo.append(nombre);
         lugarLista.append(titulo);
         
-        var img = $('<img />', {src: "http://openweathermap.org/img/w/"+ $('weather',this.datos).attr("icon")  + ".png",alt: $('weather',this.datos).attr("value")});
+        var img = $('<img />', {src: "http://openweathermap.org/img/w/"+ $('weather',this.datos).attr("icon")  + ".png",alt: lugar+"-"+$('weather',this.datos).attr("value")});
         let tiempoGeneral = document.createTextNode($('weather',this.datos).attr("value"));
         let tTiempo = $(document.createElement("h3"));
         tTiempo.append(img);
