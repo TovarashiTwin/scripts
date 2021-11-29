@@ -1,24 +1,9 @@
-/* h1,h2 {
+h1{
     color: #7e122f;
-    text-transform: uppercase;    
+    text-transform: uppercase;
 }
 
-
-body {
-    font-family: "Times New Roman", Times, serif;
-    line-height: 1.8;
-    color: #981D3E;
-    background-color: #f6f6f6;
-	background-size: cover;
-  } */
-
-body { 
-    margin:0; 
-    padding:0; 
-}
-
-/* Cambiar por otro selector y tamaño fijo */
 main {    
-    width: 600px; 
-    height: 500px;
+    width: 40em; 
+    height: 30em;
 }

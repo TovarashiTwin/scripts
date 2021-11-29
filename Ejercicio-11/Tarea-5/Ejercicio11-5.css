@@ -3,17 +3,7 @@ h1,h2 {
     text-transform: uppercase;    
 }
 
-
-body {
-    margin: 0;
-    padding: 0;
-  }
-
-main{
-    /* position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 100%; */
-    width: 400px; 
-    height: 300px;
+main{   
+    width: 40em; 
+    height: 30em;
   }
