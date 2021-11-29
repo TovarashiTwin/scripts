@@ -1,5 +1,4 @@
-body{
-    font: 400 15px Tahoma, sans-serif;
+body{    
     background-color: white;
 }
 h1 {
@@ -21,7 +20,4 @@ h4 {
 p {
     color:darkblue;
 	text-align: center;
-}
-footer{
-	text-align:center;
 }
