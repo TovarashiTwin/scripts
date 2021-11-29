@@ -12,11 +12,11 @@
     </head>
     <body>
         <h1>
-            Calculadora Basica
+            Calculadora Básica
         </h1>
         <main>
-		<form>
-			<textarea  id = "pantalla" disabled="" >0</textarea>
+		<form method="get">
+			<textarea title="pantalla" id = "pantalla" disabled="" >0</textarea>
 			
 			<input type="button" value="MRC" onclick="calculadora.botonMemRecallClear()"/>			
 			<input type="button" value="M-" onclick="calculadora.botonMemSub()"/>			
@@ -42,7 +42,7 @@
 			
 			<input type="button" value="0" onclick="calculadora.botonSimple('0')"/>
 			<input type="button" value="." onclick="calculadora.botonPunto()"/>
-			<input type="button" value="C" onclick="calculadora.botonClear()"/>
+			<input type="submit" value="C" onclick="calculadora.botonClear()"/>
 			<input type="button" value="=" onclick="calculadora.botonEnter()"/>
 		</form>   
 		</main>     
