@@ -1,29 +1,26 @@
 body{
-	font: 400 15px Tahoma, sans-serif;
+    font: 400 15px Tahoma, sans-serif;
+    background-color: white;
 }
 h1 {
-    color:red;
+    color:darkred;
 	text-align: center;
 }
 h2 {
-    color:orange;
+    color:darkorange;
 	text-align: center;
 }
 h3 {
-    color:yellow;
+    color:darkgoldenrod;
 	text-align: center;
 }
 h4 {
-    color:green;
+    color:darkgreen;
 	text-align: center;
 }
 p {
-    color:blue;
+    color:darkblue;
 	text-align: center;
-}
-*{
-    margin: 0.5em;
-    background-color: #dabbfe;
 }
 footer{
 	text-align:center;
