@@ -1,7 +1,7 @@
 "use strict"
 class Map{
     constructor(){
-        this.apiKey = "pk.eyJ1IjoidW8yNjUwMDkiLCJhIjoiY2t3YW41MjU4Mm8wNDJ2cDZjamIzZmlyZiJ9.HI0OvDVrFK1OJeiT89a8Sg";
+        this.apiKey = "pk.eyJ1IjoidW8yNjUwMDkiLCJhIjoiY2t3a2t2dGJwMXQyeTJucXZqcnUzbTZhMyJ9.AjG1hxg5ryWTa6zkTsw9hA";
         this.container = "map";//la id del tag donde vamos a meter el mapa
         this.mapStyle = "mapbox://styles/mapbox/streets-v11";
         this.file = "arbol.kml";

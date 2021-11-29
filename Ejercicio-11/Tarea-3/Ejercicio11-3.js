@@ -5,7 +5,7 @@ class Geolocalization{
         this.longitude = -3.7344397656591397;//Valor por defecto
         this.latitude = 40.43341788237872;
         this.mapSize = 0.05;
-        this.apiKey = "pk.eyJ1IjoidW8yNjUwMDkiLCJhIjoiY2t3YW41MjU4Mm8wNDJ2cDZjamIzZmlyZiJ9.HI0OvDVrFK1OJeiT89a8Sg";
+        this.apiKey = "pk.eyJ1IjoidW8yNjUwMDkiLCJhIjoiY2t3a2t2dGJwMXQyeTJucXZqcnUzbTZhMyJ9.AjG1hxg5ryWTa6zkTsw9hA";
         this.size = [750, 400];
     }
     cargarUbicacion(posicion){

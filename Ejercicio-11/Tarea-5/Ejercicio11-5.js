@@ -5,7 +5,7 @@ class Map{
        navigator.geolocation.getCurrentPosition(this.getPosicion.bind(this));
        
         //Parametros mapbox
-        this.apiKey = "pk.eyJ1IjoidW8yNjUwMDkiLCJhIjoiY2t3YW41MjU4Mm8wNDJ2cDZjamIzZmlyZiJ9.HI0OvDVrFK1OJeiT89a8Sg";
+        this.apiKey = "pk.eyJ1IjoidW8yNjUwMDkiLCJhIjoiY2t3a2t2dGJwMXQyeTJucXZqcnUzbTZhMyJ9.AjG1hxg5ryWTa6zkTsw9hA";
         this.container = "map";//la id del tag donde vamos a meter el mapa
         this.mapStyle = "mapbox://styles/mapbox/outdoors-v11";
         // this.center = [-3.7344397656591397, 40.43341788237872];
