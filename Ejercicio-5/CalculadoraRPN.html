@@ -15,7 +15,7 @@
             CalculadoraRPN
         </h1>
         
-			<form>
+			<form method="get">
 				<textarea id="pila" disabled="" rows = 4></textarea>
 				<textarea id="pantalla" disabled=""></textarea>
 				<!-- <input type="textarea" id="pantalla" disabled=""/> -->
@@ -60,7 +60,7 @@
 				<!-- Sexta fila -->
 				<input type="button" value="0" onclick="calculadora.botonNumerico(0)"/>
 				<input type="button" value="." onclick="calculadora.botonNumerico('.')"/>
-				<input type="button" value="C" onclick="calculadora.botonClear()"/>
+				<input type="submit" value="C" onclick="calculadora.botonClear()"/>
 				<input type ="button" id="enter" value="Enter" onclick="calculadora.botonEnter()"/>
 
 

@@ -1,4 +1,4 @@
-<svg width="auto" height="3600" style="overflow:visible " version="1.1" xmlns="http://www.w3.org/2000/svg">
+<svg width="3600" height="3600" style="overflow:visible " version="1.1" xmlns="http://www.w3.org/2000/svg">
 <style id="stylesheet">text { text-anchor: middle; } rect {  fill: green;   stroke: black;  opacity: 0.1;  stroke-width: 1.5;}</style>
 <text x="900" y="560" font-size="7" >Manuel Lorenzo Vega</text>
 <text x="900" y="568" font-size="6" >Nacimiento:1999-01-23</text>

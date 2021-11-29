@@ -1,0 +1,47 @@
+<svg width="500" height="300" style="overflow:visible " version="1.1" xmlns="http://www.w3.org/2000/svg">
+<style id="stylesheet">text { text-anchor: middle; } rect {  fill: green;   stroke: black;  opacity: 0.1;  stroke-width: 1.5;}</style>
+<text x="320" y="140" font-size="8" >Manuel</text>
+<text x="230.0" y="105" font-size="8" >Alberto</text>
+<text x="185.0" y="70" font-size="8" >Felipe</text>
+<text x="162.5" y="35" font-size="8" >Alejandro</text>
+<text x="207.5" y="35" font-size="8" >Magdalena</text>
+<text x="275.0" y="70" font-size="8" >Maricarmen</text>
+<text x="252.5" y="35" font-size="8" >Domingo</text>
+<text x="297.5" y="35" font-size="8" >Alejandra</text>
+<text x="410.0" y="105" font-size="8" >Camila</text>
+<text x="365.0" y="70" font-size="8" >Adolfo</text>
+<text x="342.5" y="35" font-size="8" >Diamantino</text>
+<text x="387.5" y="35" font-size="8" >Helena</text>
+<text x="455.0" y="70" font-size="8" >Ana</text>
+<text x="432.5" y="35" font-size="8" >Benito</text>
+<text x="477.5" y="35" font-size="8" >Esther</text>
+<line x1="320px" y1="130px" x2="230.0px" y2="116px" stroke="black" />
+<line x1="230.0px" y1="95px" x2="185.0px" y2="81px" stroke="black" />
+<line x1="185.0px" y1="60px" x2="162.5px" y2="46px" stroke="black" />
+<line x1="185.0px" y1="60px" x2="207.5px" y2="46px" stroke="black" />
+<line x1="230.0px" y1="95px" x2="275.0px" y2="81px" stroke="black" />
+<line x1="275.0px" y1="60px" x2="252.5px" y2="46px" stroke="black" />
+<line x1="275.0px" y1="60px" x2="297.5px" y2="46px" stroke="black" />
+<line x1="320px" y1="130px" x2="410.0px" y2="116px" stroke="black" />
+<line x1="410.0px" y1="95px" x2="365.0px" y2="81px" stroke="black" />
+<line x1="365.0px" y1="60px" x2="342.5px" y2="46px" stroke="black" />
+<line x1="365.0px" y1="60px" x2="387.5px" y2="46px" stroke="black" />
+<line x1="410.0px" y1="95px" x2="455.0px" y2="81px" stroke="black" />
+<line x1="455.0px" y1="60px" x2="432.5px" y2="46px" stroke="black" />
+<line x1="455.0px" y1="60px" x2="477.5px" y2="46px" stroke="black" />
+<rect x="300" y="130" width="40px" height="20px"></rect>
+<rect x="210.0" y="95" width="40px" height="20px"></rect>
+<rect x="165.0" y="60" width="40px" height="20px"></rect>
+<rect x="142.5" y="25" width="40px" height="20px"></rect>
+<rect x="187.5" y="25" width="40px" height="20px"></rect>
+<rect x="255.0" y="60" width="40px" height="20px"></rect>
+<rect x="232.5" y="25" width="40px" height="20px"></rect>
+<rect x="277.5" y="25" width="40px" height="20px"></rect>
+<rect x="390.0" y="95" width="40px" height="20px"></rect>
+<rect x="345.0" y="60" width="40px" height="20px"></rect>
+<rect x="322.5" y="25" width="40px" height="20px"></rect>
+<rect x="367.5" y="25" width="40px" height="20px"></rect>
+<rect x="435.0" y="60" width="40px" height="20px"></rect>
+<rect x="412.5" y="25" width="40px" height="20px"></rect>
+<rect x="457.5" y="25" width="40px" height="20px"></rect>
+</svg>
