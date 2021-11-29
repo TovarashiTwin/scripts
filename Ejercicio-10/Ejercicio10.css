@@ -9,3 +9,15 @@ body {
     color: #7e122f;
     text-transform: uppercase;    
 }
+/* Especificidad =  001 */
+table,th, td{
+	border-collapse: collapse;
+	border: 0.1em solid black;
+	text-align: center;	
+  padding: 0.2em;
+}
+/* Especificidad =  001 */
+th{
+	background-color: #6a142b;
+	color: white;
+}
