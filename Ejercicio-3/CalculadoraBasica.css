@@ -1,5 +1,7 @@
 body {   
-    align-self: center;
+    align-self: center;    
+    background-color: white;
+  
   }
 h1 {
     text-align: center;    
@@ -8,7 +10,6 @@ form {
     display: grid;    
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 5px;
-    background-color: #fff;
     color: #444;
     
     /* Que no se haga muy grande */

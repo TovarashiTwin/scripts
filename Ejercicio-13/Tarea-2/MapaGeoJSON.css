@@ -3,6 +3,9 @@ h1{
     color: #7e122f;
     text-transform: uppercase;
 }
+body {
+    background-color: #f6f6f6;	
+  }
 
 
 main{

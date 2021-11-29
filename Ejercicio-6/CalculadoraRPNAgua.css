@@ -1,6 +1,3 @@
-
-  
-
 form {    
     display: grid;  
     /*grid-template-columns: 25% 25% 25% 25%;*/
@@ -34,5 +31,10 @@ form > textarea {
     text-align: right;
   }
   h1 {
-    text-align: left;    
+    text-align: left;
+    color: #7e122f;
+    text-transform: uppercase;  
+}
+body{
+  background-color: white;
 }

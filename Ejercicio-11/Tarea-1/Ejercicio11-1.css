@@ -1,17 +1,10 @@
 
-body {
-    font-family: "Times New Roman", Times, serif;
-    line-height: 1.8;
+body {    
     color: #981D3E;
-    background-color: #f6f6f6;
-	  background-size: cover;
+    background-color: white;
   }
 
 
-h1,h2,h3 {
-    color: #7e122f;
-        
-}
-h2{
-  text-transform: uppercase;
+h1 {
+    color: #7e122f;        
 }

@@ -1,5 +1,9 @@
+body {    
+    color: #981D3E;
+    background-color: white;
+  }
 
-h1{
-    color: #7e122f;
-    text-transform: uppercase;
+
+h1 {
+    color: #7e122f;        
 }

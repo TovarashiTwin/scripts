@@ -4,6 +4,7 @@
 body {
     
     align-self: center;
+    background-color: white;
   }
   
 
@@ -12,7 +13,6 @@ form {
     /*grid-template-columns: 25% 25% 25% 25%;*/
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 5px;
-    background-color: #fff;
     color: #444;
 
     /* Que no se haga muy grande */
@@ -51,5 +51,7 @@ form > textarea {
       grid-column-end: 6;
   }
   h1 {
-    text-align: center;    
+    text-align: center;
+    color: #7e122f;
+    text-transform: uppercase;  
 }
