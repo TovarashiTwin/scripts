@@ -19,8 +19,8 @@
         <p>Cada tipo de consumo de agua se refiere a un uso, es decir que si se quiere calcular el consumo de una casa en un año en la que cuatro personas se duchan todos los dias habria que multiplicar "ducha" (75L) por 4 (personas) y 365 (dias). En el caso concreto de "fuga lavabo" y "fuga cisterna" se refiere a las perdidas de un lavabo en un dia.</p>
         
 			<form>
-				<textarea id="pila" disabled="" rows = 4>0</textarea>
-				<textarea id="pantalla" disabled="">0</textarea>
+				<textarea title="pila" id="pila" disabled="" rows = 4>0</textarea>
+				<textarea title="pantalla" id="pantalla" disabled="">0</textarea>
 				<!-- <input type="textarea" id="pantalla" disabled=""/> -->
 							
 
@@ -63,11 +63,8 @@
 				<!-- Sexta fila -->
 				<input type="button" value="0" onclick="calculadora.botonNumerico(0)"/>
 				<input type="button" value="." onclick="calculadora.botonNumerico('.')"/>
-				<input type="button" value="C" onclick="calculadora.botonClear()"/>
+				<input type="submit" value="C" onclick="calculadora.botonClear()"/>
 				<input type ="button" id="enter" value="Enter" onclick="calculadora.botonEnter()"/>
-
-
-				
 
 			</form>
         </main>
