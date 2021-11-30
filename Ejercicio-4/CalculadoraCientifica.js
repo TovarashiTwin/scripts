@@ -1,7 +1,7 @@
 "use strict";
 class CalculadoraBasica{
     constructor () {
-		this.pantalla="";
+		this.pantalla="0";
         this.memoria=0.0;
         this.auxMemory = false;
         this.inputkey();
@@ -14,8 +14,6 @@ class CalculadoraBasica{
             console.log("Syntax Error")
             this.pantalla = "";
         }
-        //Es importante usar Number.isNaN en vez de isNaN porque solo comprueba que en este momento es NaN,
-        //los Strings que no seran numeros validos no los considera NaN 
         if(Number.isNaN(this.pantalla)){
             console.log("NaN")
             this.pantalla = "";
@@ -36,21 +34,30 @@ class CalculadoraBasica{
     };
     botonSimple(arg){
         //Esta funcion se usa para los botones que simplemente añaden su simbolo
+        if(this.pantalla == "0"){
+            this.pantalla = "";
+        }
         this.auxMemory = false;
         this.pantalla+=arg;
         this.display();        
     }
+    botonPunto(){
+        //Esta funcion se usa para los botones que simplemente añaden su simbolo
+        this.auxMemory = false;
+        this.pantalla+=".";
+        this.display();        
+    }
     botonClear(){
         this.auxMemory = false;
-        this.pantalla ="";
+        this.pantalla ="0";
         this.display();        
     }
     botonMemSum(){
         this.auxMemory = false;
         this.calcularResultado();
         if(document.getElementById('pantalla').value != "Syntax Error"){
-            console.log(new Number(this.pantalla))
-            this.memoria += new Number(this.pantalla);
+            console.log(parseFloat(this.pantalla))
+            this.memoria += new Number(this.pantalla);//TODO CAMBIAR POR NEW NUMBER
         }
     }
     botonMemSub(){
@@ -60,28 +67,15 @@ class CalculadoraBasica{
             this.memoria -= new Number(this.pantalla);
         }
     }
-    //TODO remove
-    botonMemSave(){
-        this.calcularResultado();
-        if(document.getElementById('pantalla').value != "Syntax Error"){
-            this.memoria = this.pantalla;
-        }
-    }
+
     botonMemRecallClear(){
         //console.log(this.memoria.toString());
         if(this.auxMemory){//Borramos memoria
             this.memoria = 0.0;
         }else{      
             this.auxMemory = true;
-            if(this.pantalla === ""){//Esta vacia, mostramos directamente la memoria//TODO esto no funciona            
-                this.pantalla = this.memoria.toString();
-                this.display();
-            }else{
-                //console.log(this.pantalla);
-                this.pantalla += this.memoria.toString();
-                //console.log(pantalla);
-                this.display();
-            }
+            this.pantalla += this.memoria.toString();            
+            this.display();
         }
 
     }
@@ -109,9 +103,19 @@ class CalculadoraBasica{
                         }
                     }else{
                         aux += char;
-                    }                   
+                    }  
                 }else{
                     if (aux != ""){
+                        let  numCeros = 0;
+                        for(let j = 0;j<aux.length;j++){//eliminamos los ceros del principio
+                            if(aux[j] == '0'){
+                                numCeros ++;
+                            }
+                            else{
+                                break;
+                            }
+                        }
+                        aux = aux.substring(numCeros,aux.length);
                         toEval += "new Number(" + aux +")";
                         toEval += char
                         aux = "";
@@ -121,16 +125,26 @@ class CalculadoraBasica{
                 }
             }
             if(aux != ""){
+                let  numCeros = 0;
+                for(let j = 0;j<aux.length;j++){//eliminamos los ceros del principio
+                    if(aux[j] == '0'){
+                        numCeros ++;
+                    }
+                    else{
+                        break;
+                    }
+                }
+                
+                aux = aux.substring(numCeros,aux.length);
                 toEval += "new Number(" + aux +")"; 
-            }
-            console.log(toEval) ;
-            
+            }            
+            console.log(toEval);
             this.pantalla =  eval(toEval).toString();//El toString es para que siempre se interprete como string y funcione todo bien
             // document.getElementById('pantalla').value = this.pantalla;
         }catch(excepcion){
             this.pantalla = "Syntax Error";
             //document.getElementById('pantalla').value = "Syntax Error";
-            //console.log(this.memoria);
+            console.log(excepcion);
         }
     }  
     
@@ -516,7 +530,10 @@ class CalculadoraCientifica extends CalculadoraBasica{
         this.display();
     }
     botonExp(){
-
+        this.calcularResultado();
+        this.funcionDosOperadores = this.pantalla +"*Math.pow(10,";//tenemos que completar nosotros el parentesis
+        this.pantalla = "";        
+        this.display();
     }
     botonMod(){
         this.pantalla+="%";
