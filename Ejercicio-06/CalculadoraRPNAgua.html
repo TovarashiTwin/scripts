@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang ="es">
+    <head>
+		<META CHARSET="UTF-8"/>
+		<META name="author" content="Manuel Lorenzo Vega uo265009">
+		<META name ="keywords" content = "Ejercicio 3,Calculadora, Calculadora Basica">
+		<META name="description" content="Ejercicio 3 entrega ECMAScript, Calculadora Basica">
+		<link rel="stylesheet" href="CalculadoraRPNAgua.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Calculadora RPN - Agua</title>
+        <script src="CalculadoraRPNAgua.js"></script>
+    </head>
+    <body>
+        <h1>
+            CalculadoraRPN - Calculadora  de  consumos  de  agua
+        </h1>
+        <p>Las unidades son litros.</p>
+        <p>Cada tipo de consumo de agua se refiere a un uso, es decir que si se quiere calcular el consumo de una casa en un año en la que cuatro personas se duchan todos los dias habria que multiplicar "ducha" (75L) por 4 (personas) y 365 (dias). En el caso concreto de "fuga lavabo" y "fuga cisterna" se refiere a las perdidas de un lavabo en un dia.</p>
+        
+			<form>
+				<textarea id="pila" disabled="" rows = 4></textarea>
+				<textarea id="pantalla" disabled=""></textarea>
+				<!-- <input type="textarea" id="pantalla" disabled=""/> -->
+							
+
+				<!-- <input type="button" value="x^y" onclick="calculadora.botonPotenciaDeX()"/>
+				<input type="button" value="√▭" onclick="calculadora.botonRaizCuadrada()"/>
+				<input type="button" value="x^2" onclick="calculadora.botonLogaritmo()"/> -->
+				<!-- <input type="button" value="logx(y)" onclick="calculadora.botonPotenciaDeDos()"/> -->
+
+
+				<!-- Primera fila -->
+				<input type="button" value="Tirar cadena" onclick="calculadora.botonTirarCadena()"/>
+				<input type="button" value="bañera" onclick="calculadora.botonBanera()"/>
+				<input type="button" value="ducha" onclick="calculadora.botonDucha()"/>
+				<input type="button" value="Fuga cisterna" onclick="calculadora.botonFugaCisterna()"/>
+
+				<!-- Segunda fila -->				
+				<input type="button" value="Fuga lavabo" onclick="calculadora.botonFugaLavabo()"/>
+				<input type="button" value="lavadora" onclick="calculadora.botonLavadora()"/>
+				<input type="button" value="lavavajillas" onclick="calculadora.botonLavavajillas()"/>
+				<input type="button" value="/" onclick="calculadora.botonDivision()"/>
+
+				<!-- Tercera fila -->
+				<input type="button" value="7" onclick="calculadora.botonNumerico(7)"/>
+				<input type="button" value="8" onclick="calculadora.botonNumerico(8)"/>
+				<input type="button" value="9" onclick="calculadora.botonNumerico(9)"/>
+				<input type="button" value="*" onclick="calculadora.botonMultiplicacion()"/>
+				
+				<!-- Cuarta fila -->
+				<input type="button" value="4" onclick="calculadora.botonNumerico(4)"/>
+				<input type="button" value="5" onclick="calculadora.botonNumerico(5)"/>
+				<input type="button" value="6" onclick="calculadora.botonNumerico(6)"/>
+				<input type="button" value="-" onclick="calculadora.botonResta()"/>
+				
+				<!-- Quinta fila -->
+				<input type="button" value="1" onclick="calculadora.botonNumerico(1)"/>
+				<input type="button" value="2" onclick="calculadora.botonNumerico(2)"/>
+				<input type="button" value="3" onclick="calculadora.botonNumerico(3)"/>
+				<input type="button" value="+" onclick="calculadora.botonSuma()"/>		
+				
+				<!-- Sexta fila -->
+				<input type="button" value="0" onclick="calculadora.botonNumerico(0)"/>
+				<input type="button" value="." onclick="calculadora.botonNumerico('.')"/>
+				<input type="button" value="C" onclick="calculadora.botonClear()"/>
+				<input type ="button" id="enter" value="Enter" onclick="calculadora.botonEnter()"/>
+
+
+				
+
+			</form>
+        
+        
+    </body>
+
+</html>

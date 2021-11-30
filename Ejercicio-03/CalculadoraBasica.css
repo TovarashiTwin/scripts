@@ -1,0 +1,43 @@
+body {   
+    align-self: center;    
+    background-color: white;
+  
+  }
+h1 {
+    text-align: center;    
+}
+form {        
+    display: grid;    
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+    
+    /* Que no se haga muy grande */
+    max-width: 600px;  
+    min-width: 280px;
+
+    /*Esto es para que parezca una calculadora */
+    padding: 20px;
+    background-color: #909497;
+    border-radius: 25px;
+  }
+input[type=button],input[type=submit] {
+    background-color: #666;
+    color: #fff;
+    font-size: 150%;
+  }
+input[value="MRC"],input[value="M+"],input[value="M-"]
+{
+  background-color: #444;
+}
+input[value="/"],input[value="+"],input[value="-"],input[value="*"]
+{
+  background-color: darkred;
+}
+form > textarea {
+      background-color: lightgreen;      
+      color: black;
+      text-align: center;
+      font-size: 200%;
+      grid-column-start: 1;
+      grid-column-end: 5;
+  }

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang ="es">
+    <head>
+		<META CHARSET="UTF-8"/>
+		<META name="author" content="Manuel Lorenzo Vega uo265009">
+		<META name ="keywords" content = "Ejercicio 3,Calculadora, Calculadora Basica">
+		<META name="description" content="Ejercicio 3 entrega ECMAScript, Calculadora Basica">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<link rel="stylesheet" href="CalculadoraBasica.css">
+        <title>Calculadora Basica</title>
+        <script src="CalculadoraBasica.js"></script>
+    </head>
+    <body>
+        <h1>
+            Calculadora Básica
+        </h1>
+        <main>
+		<form method="get">
+			<textarea title="pantalla" id = "pantalla" disabled="" >0</textarea>
+			
+			<input type="button" value="MRC" onclick="calculadora.botonMemRecallClear()"/>			
+			<input type="button" value="M-" onclick="calculadora.botonMemSub()"/>			
+			<input type="button" value="M+" onclick="calculadora.botonMemSum()"/>			
+			<input type="button" value="/" onclick="calculadora.botonSimple('/')"/>
+
+			<input type="button" value="7" onclick="calculadora.botonSimple('7')"/>
+			<input type="button" value="8" onclick="calculadora.botonSimple('8')"/>
+			<input type="button" value="9" onclick="calculadora.botonSimple('9')"/>
+			<input type="button" value="*" onclick="calculadora.botonSimple('*')"/>
+			
+
+			<input type="button" value="4" onclick="calculadora.botonSimple('4')"/>
+			<input type="button" value="5" onclick="calculadora.botonSimple('5')"/>
+			<input type="button" value="6" onclick="calculadora.botonSimple('6')"/>
+			<input type="button" value="-" onclick="calculadora.botonSimple('-')"/>
+			
+			
+			<input type="button" value="1" onclick="calculadora.botonSimple('1')"/>
+			<input type="button" value="2" onclick="calculadora.botonSimple('2')"/>
+			<input type="button" value="3" onclick="calculadora.botonSimple('3')"/>
+			<input type="button" value="+" onclick="calculadora.botonSimple('+')"/>		
+			
+			<input type="button" value="0" onclick="calculadora.botonSimple('0')"/>
+			<input type="button" value="." onclick="calculadora.botonPunto()"/>
+			<input type="submit" value="C" onclick="calculadora.botonClear()"/>
+			<input type="button" value="=" onclick="calculadora.botonEnter()"/>
+		</form>   
+		</main>     
+    </body>
+
+</html>

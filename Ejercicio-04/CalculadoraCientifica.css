@@ -1,0 +1,57 @@
+/*
+* El cuerpo de la calculadora
+*/
+body {
+    
+    align-self: center;
+    background-color: white;
+  }
+  
+
+form {        
+    display: grid;  
+    /*grid-template-columns: 25% 25% 25% 25%;*/
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 5px;    
+
+    /* Que no se haga muy grande */
+    max-width: 600px;  
+    min-width: 280px;
+
+    /*Esto es para que parezca una calculadora */
+    padding: 20px;
+    background-color: #909497;
+    border-radius: 25px;
+  }
+  
+  
+input[type=button],input[type=submit] {
+    background-color: #666;
+    color: #fff;
+    font-size: 150%;
+  }
+
+input[value="MR"],input[value="MC"],input[value="MS"],input[value="M+"],input[value="M-"] {
+    background-color: #444;    
+  }
+/* input[value="0"],input[value="1"],input[value="2"],input[value="3"],input[value="4"],
+input[value="5"],input[value="6"],input[value="7"],input[value="8"],input[value="9"]  {
+    background-color: #777;    
+ } */
+input[value="/"],input[value="+"],input[value="-"],input[value="*"]
+  {
+    background-color: #a32638;
+  }
+form > textarea {
+      background-color: lightgreen;      
+      color: black;
+      text-align: center;
+      font-size: 200%;
+      grid-column-start: 1;
+      grid-column-end: 6;
+  }
+  h1 {
+    text-align: center;
+    color: #7e122f;
+    text-transform: uppercase;  
+}

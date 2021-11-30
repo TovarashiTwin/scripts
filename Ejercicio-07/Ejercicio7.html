@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html lang="es">
+	<head>
+		<META CHARSET="UTF-8"/>
+		<META name="author" content="Manuel Lorenzo Vega uo265009">		
+		<META name="description" content="Ejercicio 7 practica ECMAScript">
+        <link rel="stylesheet" href="Ejercicio7.css">
+        <script src = "Ejercicio7.js" > </script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<title>Ejercicio7</title>
+	</head>	
+	<body>
+        <main>
+			<h1>Ejercicio 7</h1>
+			<button onclick="ej.mostrarElementoPadre()">Mostrar elemento padre y tipo de elemento</button>         
+            <h2>Frutas</h2>
+			<label for="inputParrafo">Nuevo elemento</label>
+            	<input type="text" id="inputParrafo">
+            <button onclick="ej.add()">Añadir</button>
+			<button onclick="ej.delete()">Borrar</button>
+			<button onclick="ej.ocultar()">Ocultar</button>
+			<button id="modificar" onclick="ej.modificar()">Modificar</button>
+            <p id= fruta>Manzana</p>
+
+			<h3>Tabla de referencia de frutas</h3>
+            <table>
+				<tr>
+					<th>Fruta</th>
+					<th>Calorias</th>
+					<th>Euros el kilo</th>					
+				</tr>
+				<tr>
+					<td>Manzana</td>
+					<td>45</td>
+					<td>2</td>					
+                </tr>
+                <tr>
+					<td>Platano</td>
+					<td>80</td>
+					<td>4</td>					
+                </tr>	
+                <tr>
+					<td>Clementina</td>
+					<td>20</td>
+					<td>3</td>					
+                </tr>	
+                <tr>
+					<td>Limon</td>
+					<td>14</td>
+					<td>5</td>					
+				</tr>		
+			</table>
+			<button id= "sumTabla" onclick="ej.sumTabla()">Calcular numero de filas y columnas</button>
+        </main>
+    </body>
+</html>
