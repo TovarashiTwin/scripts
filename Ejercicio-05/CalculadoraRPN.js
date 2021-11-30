@@ -131,7 +131,7 @@ class CalculadoraRPN{
             this.theStack.push(this.pantalla);
             this.mostrarPila();
             this.pantalla = "";//Al apilar borras la pantalla
-            document.getElementById('pantalla').value = this.pantalla;
+            this.display();
         }
     }
 
@@ -140,7 +140,12 @@ class CalculadoraRPN{
 	}
     
     display(){
-        document.getElementById('pantalla').value = this.pantalla;
+        if(this.pantalla == ""){
+            document.getElementById('pantalla').value = "0";
+        }else{
+            document.getElementById('pantalla').value = this.pantalla;
+        }
+        
     }
 
     botonClear(){
