@@ -21,7 +21,7 @@ class Tiempo{
 
         $.ajax({
             dataType: "xml",
-            url: "http://api.openweathermap.org/data/2.5/weather?q="+lugar+ this.formato +this.unidades + this.idioma + "&APPID=" + this.apikey,
+            url: "https://api.openweathermap.org/data/2.5/weather?q="+lugar+ this.formato +this.unidades + this.idioma + "&APPID=" + this.apikey,
             method: 'GET',
             success: function(data){
                 self.datos = data;                
@@ -39,7 +39,7 @@ class Tiempo{
         titulo.append(nombre);
         lugarLista.append(titulo);
         
-        var img = $('<img />', {src: "http://openweathermap.org/img/w/"+ $('weather',this.datos).attr("icon")  + ".png",alt: lugar+"-"+$('weather',this.datos).attr("value")});
+        var img = $('<img />', {src: "https://openweathermap.org/img/w/"+ $('weather',this.datos).attr("icon")  + ".png",alt: lugar+"-"+$('weather',this.datos).attr("value")});
         let tiempoGeneral = document.createTextNode($('weather',this.datos).attr("value"));
         let tTiempo = $(document.createElement("h3"));
         tTiempo.append(img);
