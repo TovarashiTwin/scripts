@@ -57,14 +57,14 @@ class CalculadoraBasica{
         this.calcularResultado();
         if(document.getElementById('pantalla').value != "Syntax Error"){
             console.log(parseFloat(this.pantalla))
-            this.memoria += parseFloat(this.pantalla);
+            this.memoria += new Number(this.pantalla);//TODO CAMBIAR POR NEW NUMBER
         }
     }
     botonMemSub(){
         this.auxMemory = false;
         this.calcularResultado();
         if(document.getElementById('pantalla').value != "Syntax Error"){
-            this.memoria -= parseFloat(this.pantalla);
+            this.memoria -= new Number(this.pantalla);
         }
     }
 
@@ -74,15 +74,8 @@ class CalculadoraBasica{
             this.memoria = 0.0;
         }else{      
             this.auxMemory = true;
-            if(this.pantalla === ""){//Esta vacia, mostramos directamente la memoria//TODO esto no funciona            
-                this.pantalla = this.memoria.toString();
-                this.display();
-            }else{
-                //console.log(this.pantalla);
-                this.pantalla += this.memoria.toString();
-                //console.log(pantalla);
-                this.display();
-            }
+            this.pantalla += this.memoria.toString();            
+            this.display();
         }
 
     }
@@ -105,6 +98,16 @@ class CalculadoraBasica{
                     aux += char;
                 }else{
                     if (aux != ""){
+                        let  numCeros = 0;
+                        for(let j = 0;j<aux.length;j++){//eliminamos los ceros del principio
+                            if(aux[j] == '0'){
+                                numCeros ++;
+                            }
+                            else{
+                                break;
+                            }
+                        }
+                        aux = aux.substring(numCeros,aux.length);
                         toEval += "new Number(" + aux +")";
                         toEval += char
                         aux = "";
@@ -114,6 +117,16 @@ class CalculadoraBasica{
                 }
             }
             if(aux != ""){
+                let  numCeros = 0;
+                for(let j = 0;j<aux.length;j++){//eliminamos los ceros del principio
+                    if(aux[j] == '0'){
+                        numCeros ++;
+                    }
+                    else{
+                        break;
+                    }
+                }
+                aux = aux.substring(numCeros,aux.length);
                 toEval += "new Number(" + aux +")"; 
             }
             console.log(toEval) ;
@@ -123,7 +136,7 @@ class CalculadoraBasica{
         }catch(excepcion){
             this.pantalla = "Syntax Error";
             //document.getElementById('pantalla').value = "Syntax Error";
-            //console.log(this.memoria);
+            console.log(excepcion);
         }
     }  
     
