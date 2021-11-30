@@ -46,8 +46,8 @@ class CalculadoraRPN{
 
     botonSuma(){
         if(this.theStack.length() >= 2){
-            var param1 = parseFloat(this.theStack.pop());
-            var param2 = parseFloat(this.theStack.pop());
+            var param1 = new Number(this.theStack.pop());
+            var param2 = new Number(this.theStack.pop());
             this.theStack.push(param2 + param1);
             this.mostrarPila();
         }
@@ -55,24 +55,24 @@ class CalculadoraRPN{
     }
     botonResta(){
         if(this.theStack.length() >= 2){
-            var param1 = parseFloat(this.theStack.pop());
-            var param2 = parseFloat(this.theStack.pop());
+            var param1 = new Number(this.theStack.pop());
+            var param2 = new Number(this.theStack.pop());
             this.theStack.push(param2 - param1);
             this.mostrarPila();
         }
     }
     botonDivision(){
         if(this.theStack.length() >= 2){
-            var param1 = parseFloat(this.theStack.pop());
-            var param2 = parseFloat(this.theStack.pop());
+            var param1 = new Number(this.theStack.pop());
+            var param2 = new Number(this.theStack.pop());
             this.theStack.push(param2 / param1);
             this.mostrarPila();
         }
     }
     botonMultiplicacion(){
         if(this.theStack.length() >= 2){
-            var param1 = parseFloat(this.theStack.pop());
-            var param2 = parseFloat(this.theStack.pop());
+            var param1 = new Number(this.theStack.pop());
+            var param2 = new Number(this.theStack.pop());
             this.theStack.push(param2 * param1);
             this.mostrarPila();
         }
@@ -80,8 +80,8 @@ class CalculadoraRPN{
     
     botonPotenciaDeX(){
         if(this.theStack.length() >= 2){{}
-            var param1 = parseFloat(this.theStack.pop());
-            var param2 = parseFloat(this.theStack.pop());
+            var param1 = new Number(this.theStack.pop());
+            var param2 = new Number(this.theStack.pop());
             this.theStack.push(Math.pow(param2,param1));
             this.mostrarPila();
         }
@@ -93,33 +93,33 @@ class CalculadoraRPN{
     // }
 
     botonSeno(){
-        var param1 = parseFloat(this.theStack.pop());       
+        var param1 = new Number(this.theStack.pop());       
         this.theStack.push(Math.sin(param1));
         this.mostrarPila();
     }
-    botonCoso(){
-        var param1 = parseFloat(this.theStack.pop());       
+    botonCoseno(){
+        var param1 = new Number(this.theStack.pop());       
         this.theStack.push(Math.cos(param1));
         this.mostrarPila();
     }
     botonTangente(){
-        var param1 = parseFloat(this.theStack.pop());       
+        var param1 = new Number(this.theStack.pop());       
         this.theStack.push(Math.tan(param1));
         this.mostrarPila();
     }
 
     botonArcoSeno(){
-        var param1 = parseFloat(this.theStack.pop());       
+        var param1 = new Number(this.theStack.pop());       
         this.theStack.push(Math.asin(param1));
         this.mostrarPila();
     }
     botonArcoCoseno(){
-        var param1 = parseFloat(this.theStack.pop());       
+        var param1 = new Number(this.theStack.pop());       
         this.theStack.push(Math.acos(param1));
         this.mostrarPila();
     }
     botonArcoTangente(){
-        var param1 = parseFloat(this.theStack.pop());       
+        var param1 = new Number(this.theStack.pop());       
         this.theStack.push(Math.atan(param1));
         this.mostrarPila();
     }
