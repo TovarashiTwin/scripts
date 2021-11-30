@@ -81,8 +81,6 @@ class Tiempo{
         $('body').append(lista);
     };
 }
-function init(){
-    var elTiempo = new Tiempo();
-    elTiempo.cargarTodosLugares();
-}
-onload = init;
+
+
+var elTiempo = new Tiempo();
