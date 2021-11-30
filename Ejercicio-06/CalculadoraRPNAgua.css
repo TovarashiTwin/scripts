@@ -24,7 +24,6 @@ input[type=button] {
 form > textarea {
     background-color: lightgreen;      
     color: black;
-    text-align: center;
     font-size: 200%;
     grid-column-start: 1;
     grid-column-end: 5;
