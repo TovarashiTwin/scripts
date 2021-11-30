@@ -10,7 +10,6 @@ form {
     display: grid;    
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 5px;
-    color: #444;
     
     /* Que no se haga muy grande */
     max-width: 600px;  
@@ -35,7 +34,8 @@ input[value="/"],input[value="+"],input[value="-"],input[value="*"]
   background-color: darkred;
 }
 form > textarea {
-      background-color: lightgreen;
+      background-color: lightgreen;      
+      color: black;
       text-align: center;
       font-size: 200%;
       grid-column-start: 1;

@@ -2,8 +2,7 @@ form {
     display: grid;  
     /*grid-template-columns: 25% 25% 25% 25%;*/
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 5px;   
-    color: #444;
+    grid-gap: 5px;      
 
 
    /* Que no se haga muy grande */
@@ -23,7 +22,8 @@ input[type=button] {
     font-size: 120%;
   }
 form > textarea {
-    color: green;
+    background-color: lightgreen;      
+    color: black;
     text-align: center;
     font-size: 200%;
     grid-column-start: 1;
