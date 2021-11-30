@@ -46,8 +46,8 @@ class CalculadoraRPNAgua{
 
     botonSuma(){
         if(this.theStack.length() >= 2){
-            var param1 = parseFloat(this.theStack.pop());
-            var param2 = parseFloat(this.theStack.pop());
+            var param1 = new Number(this.theStack.pop());
+            var param2 = new Number(this.theStack.pop());
             this.theStack.push(param2 + param1);
             this.mostrarPila();
         }
@@ -55,24 +55,24 @@ class CalculadoraRPNAgua{
     }
     botonResta(){
         if(this.theStack.length() >= 2){
-            var param1 = parseFloat(this.theStack.pop());
-            var param2 = parseFloat(this.theStack.pop());
+            var param1 = new Number(this.theStack.pop());
+            var param2 = new Number(this.theStack.pop());
             this.theStack.push(param2 - param1);
             this.mostrarPila();
         }
     }
     botonDivision(){
         if(this.theStack.length() >= 2){
-            var param1 = parseFloat(this.theStack.pop());
-            var param2 = parseFloat(this.theStack.pop());
+            var param1 = new Number(this.theStack.pop());
+            var param2 = new Number(this.theStack.pop());
             this.theStack.push(param2 / param1);
             this.mostrarPila();
         }
     }
     botonMultiplicacion(){
         if(this.theStack.length() >= 2){
-            var param1 = parseFloat(this.theStack.pop());
-            var param2 = parseFloat(this.theStack.pop());
+            var param1 = new Number(this.theStack.pop());
+            var param2 = new Number(this.theStack.pop());
             this.theStack.push(param2 * param1);
             this.mostrarPila();
         }
