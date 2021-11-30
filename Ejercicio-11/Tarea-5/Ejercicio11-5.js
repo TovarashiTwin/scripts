@@ -34,12 +34,5 @@ class Map{
     }
     
 }
-// function init(){//preguntar por esto
-//     var mapa = new Map();
-//     //mapa.mostrarMapaDinamico();    
-// };
-// onload = init;
 
 var mapa = new Map();
-// var mapa = new Map();
-// mapa.mostrarMapaDinamico()

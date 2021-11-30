@@ -20,13 +20,5 @@ class Map{
             .addTo(map);
     }     
 }
-// function init(){
-//     var mapa = new Map();
-//     mapa.mostrarMapaDinamico();    
-// };
-// onload = init;
 
 var mapa = new Map();
-// onload = mapa.mostrarMapaDinamico; 
-// var mapa = new Map();
-// mapa.mostrarMapaDinamico()

@@ -1,9 +1,4 @@
 "use strict"
-class Place{
-    constructor(place,lat,lon){
-
-    }
-}
 class Mapa{
     constructor(){
         this.apiKey = "pk.eyJ1IjoidW8yNjUwMDkiLCJhIjoiY2t3a2t2dGJwMXQyeTJucXZqcnUzbTZhMyJ9.AjG1hxg5ryWTa6zkTsw9hA";
