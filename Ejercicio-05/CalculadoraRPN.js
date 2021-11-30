@@ -37,8 +37,35 @@ class CalculadoraRPN{
     constructor () {
         this.pantalla="";
         this.theStack = new Stack();
+        this.inputkey();
     }
     
+    inputkey() {
+        document.addEventListener("keydown", (event) => {
+            if (event.key == ".") {
+                this.botonNumerico(event.key);
+            }
+            else if (event.key == "+") {
+                this.botonSuma(event.key);
+            }
+            else if (event.key == "-") {
+                this.botonResta(event.key);
+            }
+            else if (event.key == "*") {
+                this.botonMultiplicacion(event.key);
+            }
+            else if (event.key == "/") {
+                this.botonDivision(event.key);
+            }
+            else if (!isNaN(event.key)) {//comprobamos que es un numero
+                this.botonNumerico(event.key);
+            }
+            else if (event.key == "Enter") {
+                this.botonEnter();
+            }
+        })
+    };
+
     botonNumerico(arg){             
         this.pantalla+=arg;
         this.display();        
