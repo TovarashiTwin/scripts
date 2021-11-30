@@ -13,8 +13,8 @@ class LectorArchivos{
         }	
         for (let i = 0; i < nFiles; i++) {
             this.datos += "<pre>Archivo " + (i+1) +": "+ files[i].name  + "  Tamaño: " + files[i].size +" bytes " + "  Tipo: " + files[i].type + "</pre>" ;
-            var text = "text";
-            if (files[i].type.match(/text.*/) || files[i].type.match("application/json") || files[i].type.match("text/xml")) {
+            var text = "text";           
+            if (files[i].type.match("text/plain") || files[i].type.match("application/json") || files[i].type.match("text/xml")) {
                 let lector = new FileReader();
                 lector.readAsText(files[i]);
                 var self = this;
