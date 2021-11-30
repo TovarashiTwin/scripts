@@ -128,8 +128,7 @@ class CalculadoraBasica{
                 }
                 aux = aux.substring(numCeros,aux.length);
                 toEval += "new Number(" + aux +")"; 
-            }
-            console.log(toEval) ;
+            }            
             
             this.pantalla =  eval(toEval).toString();//El toString es para que siempre se interprete como string y funcione todo bien
             // document.getElementById('pantalla').value = this.pantalla;
