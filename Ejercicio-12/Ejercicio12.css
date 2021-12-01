@@ -1,9 +1,10 @@
+/* Especificidad =  001 */
 h1,h2 {
     color: #7e122f;
     text-transform: uppercase;    
 }
 
-
+/* Especificidad =  001 */
 body {
     color: #981D3E;
     background-color: #f6f6f6;	

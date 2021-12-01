@@ -1,14 +1,15 @@
-
+/* Especificidad =  001 */
 body {
     color: #981D3E;
     background-color: white;	  
   }
 
-
+/* Especificidad =  001 */
 h1,h2 {
     color: #7e122f;
         
 }
+/* Especificidad =  001 */
 h2{
   text-transform: uppercase;
 }

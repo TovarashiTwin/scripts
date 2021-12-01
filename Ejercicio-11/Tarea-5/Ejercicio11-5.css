@@ -1,10 +1,13 @@
+/* Especificidad =  001 */
 h1,h2 {
     color: #7e122f;
     text-transform: uppercase;    
 }
+/* Especificidad =  001 */
 body {    
     background-color: white;
   }
+  /* Especificidad =  001 */
 main{   
     width: 40em; 
     height: 30em;

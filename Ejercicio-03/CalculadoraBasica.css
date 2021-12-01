@@ -1,11 +1,14 @@
+/* Especificidad =  001 */
 body {   
     align-self: center;    
     background-color: white;
   
   }
+  /* Especificidad =  001 */
 h1 {
     text-align: center;    
 }
+/* Especificidad =  001 */
 form {        
     display: grid;    
     grid-template-columns: repeat(4, 1fr);
@@ -20,19 +23,23 @@ form {
     background-color: #909497;
     border-radius: 25px;
   }
+  /* Especificidad =  011 */
 input[type=button],input[type=submit] {
     background-color: #666;
     color: #fff;
     font-size: 150%;
   }
+  /* Especificidad =  011 */
 input[value="MRC"],input[value="M+"],input[value="M-"]
 {
   background-color: #444;
 }
+/* Especificidad =  011 */
 input[value="/"],input[value="+"],input[value="-"],input[value="*"]
 {
   background-color: darkred;
 }
+/* Especificidad =  002 */
 form > textarea {
       background-color: lightgreen;      
       color: black;

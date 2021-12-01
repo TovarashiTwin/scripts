@@ -1,13 +1,14 @@
 /*
 * El cuerpo de la calculadora
 */
+/* Especificidad =  001 */
 body {
     
     align-self: center;
     background-color: white;
   }
   
-
+/* Especificidad =  001 */
 form {        
     display: grid;  
     /*grid-template-columns: 25% 25% 25% 25%;*/
@@ -24,24 +25,22 @@ form {
     border-radius: 25px;
   }
   
-  
+  /* Especificidad =  011 */
 input[type=button],input[type=submit] {
     background-color: #666;
     color: #fff;
     font-size: 150%;
   }
-
+/* Especificidad =  011 */
 input[value="MR"],input[value="MC"],input[value="MS"],input[value="M+"],input[value="M-"] {
     background-color: #444;    
   }
-/* input[value="0"],input[value="1"],input[value="2"],input[value="3"],input[value="4"],
-input[value="5"],input[value="6"],input[value="7"],input[value="8"],input[value="9"]  {
-    background-color: #777;    
- } */
+/* Especificidad =  011 */
 input[value="/"],input[value="+"],input[value="-"],input[value="*"]
   {
     background-color: #a32638;
   }
+  /* Especificidad =  002 */
 form > textarea {
       background-color: lightgreen;      
       color: black;
@@ -50,6 +49,7 @@ form > textarea {
       grid-column-start: 1;
       grid-column-end: 6;
   }
+  /* Especificidad =  001 */
   h1 {
     text-align: center;
     color: #7e122f;

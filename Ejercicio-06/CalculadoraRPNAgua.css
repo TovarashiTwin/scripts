@@ -1,3 +1,4 @@
+/* Especificidad =  001 */
 form {    
     display: grid;  
     /*grid-template-columns: 25% 25% 25% 25%;*/
@@ -15,12 +16,13 @@ form {
     border-radius: 25px;
   }
   
-  
+  /* Especificidad =  011 */
 input[type=button],[type=submit] {
     background-color: #444;
     color: #fff;
     font-size: 90%;
   }
+  /* Especificidad =  002 */
 form > textarea {
     background-color: lightgreen;      
     color: black;
@@ -29,11 +31,13 @@ form > textarea {
     grid-column-end: 5;
     text-align: right;
   }
+  /* Especificidad =  001 */
   h1 {
     text-align: left;
     color: #7e122f;
     text-transform: uppercase;  
 }
+/* Especificidad =  001 */
 body{
   background-color: white;
 }

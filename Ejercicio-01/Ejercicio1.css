@@ -1,22 +1,28 @@
+/* Especificidad =  001 */
 body{    
     background-color: white;
 }
+/* Especificidad =  001 */
 h1 {
     color:darkred;
 	text-align: center;
 }
+/* Especificidad =  001 */
 h2 {
     color:darkmagenta;
 	text-align: center;
 }
+/* Especificidad =  001 */
 h3 {
     color:darkgoldenrod;
 	text-align: center;
 }
+/* Especificidad =  001 */
 h4 {
     color:darkgreen;
 	text-align: center;
 }
+/* Especificidad =  001 */
 p {
     color:darkblue;
 	text-align: center;
