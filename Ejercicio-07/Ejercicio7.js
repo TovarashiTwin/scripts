@@ -25,10 +25,11 @@ class Ejercicio7 {
 		
 	}
 	mostrarElementoPadre(){		//tarea 5
-		$("*", document.body).each(function() {
+		//Table. tbody y tr no deben de contener "texto"
+		$("*", document.body).not("table").not("tbody").not("tr").each(function() {
 			var etiquetaPadre = $(this).parent().get(0).tagName;
-			$(this).prepend(document.createTextNode( "Padre : <" + etiquetaPadre + "> elemento : <" + $(this).get(0).tagName +"> valor:"));
-		});
+			$(this).prepend(document.createTextNode( "Padre : <" + etiquetaPadre + "> elemento : <" + $(this).get(0).tagName +"> valor: "));
+		});		
 		
 	}
 	sumTabla(){ //tarea 6
