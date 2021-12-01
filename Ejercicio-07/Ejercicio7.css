@@ -2,6 +2,7 @@
 body {
     color: #981D3E;
     background-color: #f6f6f6;
+    font-size: 120%;
   }
 
 /* Especificidad =  001 */
@@ -19,4 +20,7 @@ table,th, td{
 th{
 	background-color: #6a142b;
 	color: white;
+}
+button{
+  font-size: 110%;
 }

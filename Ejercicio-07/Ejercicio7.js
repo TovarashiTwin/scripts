@@ -1,27 +1,27 @@
 class Ejercicio7 {
 
 	ocultar(){//Tarea 1
-		if($("[id=fruta]").is(":visible")){
-			$("[id=fruta]").hide();
+		if($("p").is(":visible")){
+			$("p").hide();
 		}
 		else {
-			$("[id=fruta]").show();
+			$("p").show();
 		}
 		
 	}
 
 	modificar(){//tarea 2
-		$("[id=fruta]").text(function(i, origText){
+		$("p").text(function(i, origText){
 			return origText.toUpperCase(); 
 		  });
 	}
 
 	add(){	//tarea 3
-		$("#modificar").after("<p id=\"fruta\"> " + $("#inputParrafo").val() + "</p>");
+		$("#modificar").after("<p> " + $("#inputParrafo").val() + "</p>");
 		
 	}
 	delete(){//tarea 4
-		$("#fruta").remove();
+		$("p").remove();
 		
 	}
 	mostrarElementoPadre(){		//tarea 5
