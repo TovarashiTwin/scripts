@@ -46,16 +46,16 @@ class CalculadoraRPNAgua{
                 this.botonNumerico(event.key);
             }
             else if (event.key == "+") {
-                this.botonSuma(event.key);
+                this.botonSuma();
             }
             else if (event.key == "-") {
-                this.botonResta(event.key);
+                this.botonResta();
             }
             else if (event.key == "*") {
-                this.botonMultiplicacion(event.key);
+                this.botonMultiplicacion();
             }
             else if (event.key == "/") {
-                this.botonDivision(event.key);
+                this.botonDivision();
             }
             else if (!isNaN(event.key)) {//comprobamos que es un numero
                 this.botonNumerico(event.key);
