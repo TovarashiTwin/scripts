@@ -1,305 +1,305 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE personas SYSTEM "arbol.dtd">
 <personas>
-	<persona nombre="Manuel" apellidos="Lorenzo Vega">
-		<datos>
-			<fechaNacimiento>1999-01-23</fechaNacimiento> 
-			<lugarNacimiento>Madrid,Madrid</lugarNacimiento> 
-			<coordenadasNacimiento>
-				<longitud>-3.7344397656591397</longitud>
-				<latitud>40.43341788237872</latitud>
-				<altitud>595</altitud>
-			</coordenadasNacimiento>
-			<fotografias>
-				<fotografia>multimedia/image.png</fotografia>
-				<fotografia>multimedia/image_2.png</fotografia>
-			</fotografias>
-			<videos>
-				<video>multimedia/video.mp4</video>
-			</videos>			
-			<comentario>Buencha</comentario>
-		</datos>	
-		<persona nombre="Alberto" apellidos ="Lorenzo Álvarez">
-			<datos>
-				<fechaNacimiento>1963-01-08</fechaNacimiento>				
-				<lugarNacimiento>Oviedo,Asturias</lugarNacimiento> 
-				<coordenadasNacimiento>
-					<longitud>-5.830170059192873</longitud>
-					<latitud>43.37530326395324</latitud>
-					<altitud>208</altitud>
-				</coordenadasNacimiento>	
-				<fotografias>			
-					<fotografia>multimedia/image1.jpg</fotografia>
-				</fotografias>
-				<comentario>Murio haciendo lo que más quería</comentario>            
-			</datos>
-			<persona nombre="Felipe" apellidos="Lorenzo Mohamed">
-				<datos>
-					<fechaNacimiento>1940-11-17</fechaNacimiento> 
-					<lugarNacimiento>La Fuencubierta,Córdoba</lugarNacimiento> 
-					<coordenadasNacimiento>
-						<longitud>-4.989371610033474</longitud>
-						<latitud>37.70948700592726</latitud>
-						<altitud>174</altitud>
-					</coordenadasNacimiento>
-					<fotografias>
-						<fotografia>multimedia/image11.jpg</fotografia>
-					</fotografias>				
-					<comentario>Jugador profesional de Volley</comentario>            
-				</datos>
-				<persona nombre="Alejandro" apellidos="Lorenzo Badiola">
-					<datos>
-						<fechaNacimiento>1913-03-30</fechaNacimiento> 
-						<lugarNacimiento>Medina del Pomar,Burgos</lugarNacimiento> 
-						<coordenadasNacimiento>
-							<longitud>-3.488908375884684</longitud>
-							<latitud>42.93894780573726</latitud>
-							<altitud>585</altitud>
-						</coordenadasNacimiento>
-						<fechaFallecimiento>1978-09-28</fechaFallecimiento>
-						<lugarFallecimiento>La Bañeza, León</lugarFallecimiento>
-						<coordenadasFallecimiento>
-							<longitud>-5.899418998113955</longitud>
-							<latitud>42.29872161823146</latitud>
-							<altitud>779</altitud>
-						</coordenadasFallecimiento>       
-						<fotografias>
-							<fotografia>multimedia/image111.jpg</fotografia>
-						</fotografias>						
-						<comentario>El queria llamarse Adrian</comentario>            
-					</datos>        
-				</persona>
-				<persona nombre="Magdalena" apellidos="Mohamed Molinero">
-					<datos>
-						<fechaNacimiento>1910-05-01</fechaNacimiento> 
-						<lugarNacimiento>Ávila,Ávila</lugarNacimiento> 
-						<coordenadasNacimiento>
-							<longitud>-4.676865556868358</longitud>
-							<latitud>40.658717640218434</latitud>
-							<altitud>1137</altitud>
-						</coordenadasNacimiento>
-						<fechaFallecimiento>1959-03-14</fechaFallecimiento>
-						<lugarFallecimiento>Mingorría, Ávila</lugarFallecimiento>
-						<coordenadasFallecimiento>
-							<longitud>-4.661815132980382</longitud>
-							<latitud>40.75226696521233</latitud>
-							<altitud>1034</altitud>
-						</coordenadasFallecimiento>
-						<fotografias>
-							<fotografia>multimedia/image112.jpg</fotografia>
-						</fotografias>						
-						<comentario>Para nada como la RAE</comentario>            
-					</datos>        
-				</persona>       
-			</persona>
-			<persona nombre="Maricarmen" apellidos="Álvarez Pendragon">
-				<datos>
-					<fechaNacimiento>1942-05-14</fechaNacimiento> 
-					<lugarNacimiento>Villalba de la Lampreana,Zamora</lugarNacimiento> 
-					<coordenadasNacimiento>
-						<longitud>-5.640656849717557</longitud>
-						<latitud>41.750113515618615</latitud>
-						<altitud>684</altitud>
-					</coordenadasNacimiento>
-					<fotografias>
-						<fotografia>multimedia/image12.jpg</fotografia>
-					</fotografias>					
-					<comentario>Muy culta</comentario>
-				</datos>
-				<persona nombre="Domingo" apellidos="Álvarez Corral">
-					<datos>
-						<fechaNacimiento>1918-08-04</fechaNacimiento> 
-						<lugarNacimiento>Cangas del Narcea, Asturias</lugarNacimiento> 
-						<coordenadasNacimiento>
-							<longitud>-6.544766049031055</longitud>
-							<latitud>43.178545480806754</latitud>
-							<altitud>352</altitud>
-						</coordenadasNacimiento>
-						<fechaFallecimiento>1988-11-25</fechaFallecimiento>
-						<lugarFallecimiento>Astorga,León</lugarFallecimiento>
-						<coordenadasFallecimiento>
-							<longitud>-6.03849541081205</longitud>
-							<latitud>42.46388116123176</latitud>
-							<altitud>871</altitud>
-						</coordenadasFallecimiento>       
-						<fotografias>
-							<fotografia>multimedia/image121.jpg</fotografia>
-						</fotografias>
-						
-						<comentario>Trabajador y honesto</comentario>            
-					</datos>        
-				</persona>
-				<persona nombre="Alejandra" apellidos="Pendragon Arturez">
-					<datos>
-						<fechaNacimiento>1915-12-24</fechaNacimiento> 
-						<lugarNacimiento>Lastras de Cuellar, Segovia</lugarNacimiento> 
-						<coordenadasNacimiento>
-							<longitud>-4.110044995699699</longitud>
-							<latitud>41.293634596741335</latitud>
-							<altitud>903</altitud>
-						</coordenadasNacimiento>
-						<fechaFallecimiento>1967-01-16</fechaFallecimiento>
-						<lugarFallecimiento>Cuellar, Segovia</lugarFallecimiento>
-						<coordenadasFallecimiento>
-							<longitud>-4.317549797589234</longitud>
-							<latitud>41.40000222912337</latitud>
-							<altitud>852</altitud>
-						</coordenadasFallecimiento>     
-						<fotografias>
-							<fotografia>multimedia/image122.jpg</fotografia>
-						</fotografias>						
-						<comentario>Fan de los Mantecados del Portillo</comentario>            
-					</datos>        
-				</persona>       
-			</persona>
-		</persona>
-		<persona nombre="Camila" apellidos="Vega Carbone">
-			<datos>
-				<fechaNacimiento>1975-06-15</fechaNacimiento> 
-				<lugarNacimiento>Badalona,Barcelona</lugarNacimiento> 
-				<coordenadasNacimiento>
-					<longitud>2.238060495548925</longitud>
-					<latitud>41.464645869229706</latitud>
-					<altitud>27</altitud>
-				</coordenadasNacimiento>	
-				<fotografias>
-					<fotografia>multimedia/image2.jpg</fotografia>
-				</fotografias>
-				
-				<comentario>Un poco borde</comentario>            
-			</datos>			
-			<persona nombre="Adolfo" apellidos="Vega Suarez">
-				<datos>
-					<fechaNacimiento>1932-11-21</fechaNacimiento> 
-					<lugarNacimiento>Trinidad, Uruguay</lugarNacimiento> 
-					<coordenadasNacimiento>
-						<longitud>-56.91285028841446</longitud>
-						<latitud>-33.51852807015989</latitud>
-						<altitud>141</altitud>
-					</coordenadasNacimiento>
-					<fechaFallecimiento>2020-06-08</fechaFallecimiento>
-					<lugarFallecimiento>Seul,Corea del Sur</lugarFallecimiento>
-					<coordenadasFallecimiento>
-						<longitud>126.97996214126253</longitud>
-						<latitud>37.56877715936732</latitud>
-						<altitud>12</altitud>
-					</coordenadasFallecimiento>
-					<fotografias>
-						<fotografia>multimedia/image21.jpg</fotografia>
-					</fotografias>					
-					<comentario>Que no Paraguay</comentario>            
-				</datos>
-				<persona nombre="Diamantino" apellidos="Vega Delgado">
-					<datos>
-						<fechaNacimiento>1906-04-18</fechaNacimiento> 
-						<lugarNacimiento>Haro, La Rioja</lugarNacimiento> 
-						<coordenadasNacimiento>
-							<longitud>-2.8465975526754232</longitud>
-							<latitud>42.58532867599524</latitud>
-							<altitud>472</altitud>
-						</coordenadasNacimiento>
-						<fechaFallecimiento>1956-10-11</fechaFallecimiento>
-						<lugarFallecimiento>Miranda del Ebro, Burgos</lugarFallecimiento>
-						<coordenadasFallecimiento>
-							<longitud>-2.9342701669245717</longitud>
-							<latitud>42.68702431631258</latitud>
-							<altitud>472</altitud>
-						</coordenadasFallecimiento>     
-						<fotografias>
-							<fotografia>multimedia/image211.jpg</fotografia>
-						</fotografias>					
-						<comentario>Duro como la roca</comentario>            
-					</datos>        
-				</persona>
-				<persona nombre="Helena" apellidos="Suarez Cabrero">
-					<datos>
-						<fechaNacimiento>1908-09-09</fechaNacimiento> 
-						<lugarNacimiento>Rivabellosa, Ávala</lugarNacimiento> 
-						<coordenadasNacimiento>
-							<longitud>-2.9012543200279444</longitud>
-							<latitud>42.714266593756115</latitud>
-							<altitud>487</altitud>
-						</coordenadasNacimiento>
-						<fechaFallecimiento>1932-11-21</fechaFallecimiento>
-						<lugarFallecimiento>Miranda del Ebro, Burgos</lugarFallecimiento>
-						<coordenadasFallecimiento>
-							<longitud>-2.9342701669245717</longitud>
-							<latitud>42.68702431631258</latitud>
-							<altitud>472</altitud>
-						</coordenadasFallecimiento>       
-						<fotografias>
-							<fotografia>multimedia/image212.jpg</fotografia>
-						</fotografias>						
-						<comentario>Como le gustaban los montes de Miranda</comentario>            
-					</datos>        
-				</persona>      
-			</persona>
-			<persona nombre="Ana" apellidos="Carbone Benitez">
-				<datos>
-					<fechaNacimiento>1930-08-14</fechaNacimiento> 
-					<lugarNacimiento>Canguçu,Río Grande del Sur,Brasil</lugarNacimiento> 
-					<coordenadasNacimiento>
-						<longitud>-52.67595195186193</longitud>
-						<latitud>-31.399024108806675</latitud>
-						<altitud>407</altitud>
-					</coordenadasNacimiento>
-					<fechaFallecimiento>2008-06-02</fechaFallecimiento>
-					<lugarFallecimiento>Colloto, Asturias</lugarFallecimiento>
-					<coordenadasFallecimiento>
-						<longitud>-5.799744873048418</longitud>
-						<latitud>43.37871749648649</latitud>
-						<altitud>183</altitud>
-					</coordenadasFallecimiento>          
-					<fotografias>
-						<fotografia>multimedia/image22.jpg</fotografia>
-					</fotografias>					
-					<comentario>Amiga de los amigos de sus amigos</comentario>            
-				</datos>
-				<persona nombre="Benito" apellidos="Carbone Silva">
-					<datos>
-						<fechaNacimiento>1903-04-05</fechaNacimiento> 
-						<lugarNacimiento>El Encinar, Salamanca</lugarNacimiento> 
-						<coordenadasNacimiento>
-							<longitud>-5.583938750921723</longitud>
-							<latitud>40.8838501132761</latitud>
-							<altitud>864</altitud>
-						</coordenadasNacimiento>
-						<fechaFallecimiento>1936-11-07</fechaFallecimiento>
-						<lugarFallecimiento>Salamanca, Salamanca</lugarFallecimiento>
-						<coordenadasFallecimiento>
-							<longitud>-5.660368641176782</longitud>
-							<latitud>40.96903408456835</latitud>
-							<altitud>788</altitud>
-						</coordenadasFallecimiento>    
-						<fotografias>
-							<fotografia>multimedia/image221.jpg</fotografia>
-						</fotografias>						
-						<comentario>Lo que natura no da, Salamanca no lo otorga</comentario>            
-					</datos>        
-				</persona>
-				<persona nombre="Esther" apellidos="Benitez Casillas">
-					<datos>
-						<fechaNacimiento>1906-02-28</fechaNacimiento> 
-						<lugarNacimiento>Mozárbez,Salamanca</lugarNacimiento> 
-						<coordenadasNacimiento>
-							<longitud>-5.659126436438319</longitud>
-							<latitud>40.861264102103505</latitud>
-							<altitud>877</altitud>
-						</coordenadasNacimiento>
-						<fechaFallecimiento>1975-06-15</fechaFallecimiento>
-						<lugarFallecimiento>Carbajosa de la Sagrada, Salamanca</lugarFallecimiento>
-						<coordenadasFallecimiento>
-							<longitud>-5.647563614311447</longitud>
-							<latitud>40.93080200601295</latitud>
-							<altitud>794</altitud>
-						</coordenadasFallecimiento>       
-						<fotografias>
-							<fotografia>multimedia/image222.jpg</fotografia>
-						</fotografias>						
-						<comentario>Consiguió lo que quería</comentario>            
-					</datos>        
-				</persona>       
-			</persona> 
-		</persona>
-	</persona>
+<persona nombre="Manuel" apellidos="Lorenzo Vega">
+<datos>
+<fechaNacimiento>1999-01-23</fechaNacimiento> 
+<lugarNacimiento>Madrid,Madrid</lugarNacimiento> 
+<coordenadasNacimiento>
+<longitud>-3.7344397656591397</longitud>
+<latitud>40.43341788237872</latitud>
+<altitud>595</altitud>
+</coordenadasNacimiento>
+<fotografias>
+<fotografia>multimedia/image.png</fotografia>
+<fotografia>multimedia/image_2.png</fotografia>
+</fotografias>
+<videos>
+<video>multimedia/video.mp4</video>
+</videos>
+<comentario>Buencha</comentario>
+</datos>
+<persona nombre="Alberto" apellidos ="Lorenzo Álvarez">
+<datos>
+<fechaNacimiento>1963-01-08</fechaNacimiento>
+<lugarNacimiento>Oviedo,Asturias</lugarNacimiento> 
+<coordenadasNacimiento>
+<longitud>-5.830170059192873</longitud>
+<latitud>43.37530326395324</latitud>
+<altitud>208</altitud>
+</coordenadasNacimiento>
+<fotografias>
+<fotografia>multimedia/image1.jpg</fotografia>
+</fotografias>
+<comentario>Murio haciendo lo que más quería</comentario>            
+</datos>
+<persona nombre="Felipe" apellidos="Lorenzo Mohamed">
+<datos>
+<fechaNacimiento>1940-11-17</fechaNacimiento> 
+<lugarNacimiento>La Fuencubierta,Córdoba</lugarNacimiento> 
+<coordenadasNacimiento>
+<longitud>-4.989371610033474</longitud>
+<latitud>37.70948700592726</latitud>
+<altitud>174</altitud>
+</coordenadasNacimiento>
+<fotografias>
+<fotografia>multimedia/image11.jpg</fotografia>
+</fotografias>
+<comentario>Jugador profesional de Volley</comentario>            
+</datos>
+<persona nombre="Alejandro" apellidos="Lorenzo Badiola">
+<datos>
+<fechaNacimiento>1913-03-30</fechaNacimiento> 
+<lugarNacimiento>Medina del Pomar,Burgos</lugarNacimiento> 
+<coordenadasNacimiento>
+<longitud>-3.488908375884684</longitud>
+<latitud>42.93894780573726</latitud>
+<altitud>585</altitud>
+</coordenadasNacimiento>
+<fechaFallecimiento>1978-09-28</fechaFallecimiento>
+<lugarFallecimiento>La Bañeza, León</lugarFallecimiento>
+<coordenadasFallecimiento>
+<longitud>-5.899418998113955</longitud>
+<latitud>42.29872161823146</latitud>
+<altitud>779</altitud>
+</coordenadasFallecimiento>       
+<fotografias>
+<fotografia>multimedia/image111.jpg</fotografia>
+</fotografias>
+<comentario>El queria llamarse Adrian</comentario>            
+</datos>        
+</persona>
+<persona nombre="Magdalena" apellidos="Mohamed Molinero">
+<datos>
+<fechaNacimiento>1910-05-01</fechaNacimiento> 
+<lugarNacimiento>Ávila,Ávila</lugarNacimiento> 
+<coordenadasNacimiento>
+<longitud>-4.676865556868358</longitud>
+<latitud>40.658717640218434</latitud>
+<altitud>1137</altitud>
+</coordenadasNacimiento>
+<fechaFallecimiento>1959-03-14</fechaFallecimiento>
+<lugarFallecimiento>Mingorría, Ávila</lugarFallecimiento>
+<coordenadasFallecimiento>
+<longitud>-4.661815132980382</longitud>
+<latitud>40.75226696521233</latitud>
+<altitud>1034</altitud>
+</coordenadasFallecimiento>
+<fotografias>
+<fotografia>multimedia/image112.jpg</fotografia>
+</fotografias>
+<comentario>Para nada como la RAE</comentario>            
+</datos>        
+</persona>       
+</persona>
+<persona nombre="Maricarmen" apellidos="Álvarez Pendragon">
+<datos>
+<fechaNacimiento>1942-05-14</fechaNacimiento> 
+<lugarNacimiento>Villalba de la Lampreana,Zamora</lugarNacimiento> 
+<coordenadasNacimiento>
+<longitud>-5.640656849717557</longitud>
+<latitud>41.750113515618615</latitud>
+<altitud>684</altitud>
+</coordenadasNacimiento>
+<fotografias>
+<fotografia>multimedia/image12.jpg</fotografia>
+</fotografias>
+<comentario>Muy culta</comentario>
+</datos>
+<persona nombre="Domingo" apellidos="Álvarez Corral">
+<datos>
+<fechaNacimiento>1918-08-04</fechaNacimiento> 
+<lugarNacimiento>Cangas del Narcea, Asturias</lugarNacimiento> 
+<coordenadasNacimiento>
+<longitud>-6.544766049031055</longitud>
+<latitud>43.178545480806754</latitud>
+<altitud>352</altitud>
+</coordenadasNacimiento>
+<fechaFallecimiento>1988-11-25</fechaFallecimiento>
+<lugarFallecimiento>Astorga,León</lugarFallecimiento>
+<coordenadasFallecimiento>
+<longitud>-6.03849541081205</longitud>
+<latitud>42.46388116123176</latitud>
+<altitud>871</altitud>
+</coordenadasFallecimiento>       
+<fotografias>
+<fotografia>multimedia/image121.jpg</fotografia>
+</fotografias>
+
+<comentario>Trabajador y honesto</comentario>            
+</datos>        
+</persona>
+<persona nombre="Alejandra" apellidos="Pendragon Arturez">
+<datos>
+<fechaNacimiento>1915-12-24</fechaNacimiento> 
+<lugarNacimiento>Lastras de Cuellar, Segovia</lugarNacimiento> 
+<coordenadasNacimiento>
+<longitud>-4.110044995699699</longitud>
+<latitud>41.293634596741335</latitud>
+<altitud>903</altitud>
+</coordenadasNacimiento>
+<fechaFallecimiento>1967-01-16</fechaFallecimiento>
+<lugarFallecimiento>Cuellar, Segovia</lugarFallecimiento>
+<coordenadasFallecimiento>
+<longitud>-4.317549797589234</longitud>
+<latitud>41.40000222912337</latitud>
+<altitud>852</altitud>
+</coordenadasFallecimiento>     
+<fotografias>
+<fotografia>multimedia/image122.jpg</fotografia>
+</fotografias>
+<comentario>Fan de los Mantecados del Portillo</comentario>            
+</datos>        
+</persona>       
+</persona>
+</persona>
+<persona nombre="Camila" apellidos="Vega Carbone">
+<datos>
+<fechaNacimiento>1975-06-15</fechaNacimiento> 
+<lugarNacimiento>Badalona,Barcelona</lugarNacimiento> 
+<coordenadasNacimiento>
+<longitud>2.238060495548925</longitud>
+<latitud>41.464645869229706</latitud>
+<altitud>27</altitud>
+</coordenadasNacimiento>
+<fotografias>
+<fotografia>multimedia/image2.jpg</fotografia>
+</fotografias>
+
+<comentario>Un poco borde</comentario>            
+</datos>
+<persona nombre="Adolfo" apellidos="Vega Suarez">
+<datos>
+<fechaNacimiento>1932-11-21</fechaNacimiento> 
+<lugarNacimiento>Trinidad, Uruguay</lugarNacimiento> 
+<coordenadasNacimiento>
+<longitud>-56.91285028841446</longitud>
+<latitud>-33.51852807015989</latitud>
+<altitud>141</altitud>
+</coordenadasNacimiento>
+<fechaFallecimiento>2020-06-08</fechaFallecimiento>
+<lugarFallecimiento>Seul,Corea del Sur</lugarFallecimiento>
+<coordenadasFallecimiento>
+<longitud>126.97996214126253</longitud>
+<latitud>37.56877715936732</latitud>
+<altitud>12</altitud>
+</coordenadasFallecimiento>
+<fotografias>
+<fotografia>multimedia/image21.jpg</fotografia>
+</fotografias>
+<comentario>Que no Paraguay</comentario>            
+</datos>
+<persona nombre="Diamantino" apellidos="Vega Delgado">
+<datos>
+<fechaNacimiento>1906-04-18</fechaNacimiento> 
+<lugarNacimiento>Haro, La Rioja</lugarNacimiento> 
+<coordenadasNacimiento>
+<longitud>-2.8465975526754232</longitud>
+<latitud>42.58532867599524</latitud>
+<altitud>472</altitud>
+</coordenadasNacimiento>
+<fechaFallecimiento>1956-10-11</fechaFallecimiento>
+<lugarFallecimiento>Miranda del Ebro, Burgos</lugarFallecimiento>
+<coordenadasFallecimiento>
+<longitud>-2.9342701669245717</longitud>
+<latitud>42.68702431631258</latitud>
+<altitud>472</altitud>
+</coordenadasFallecimiento>     
+<fotografias>
+<fotografia>multimedia/image211.jpg</fotografia>
+</fotografias>
+<comentario>Duro como la roca</comentario>            
+</datos>        
+</persona>
+<persona nombre="Helena" apellidos="Suarez Cabrero">
+<datos>
+<fechaNacimiento>1908-09-09</fechaNacimiento> 
+<lugarNacimiento>Rivabellosa, Ávala</lugarNacimiento> 
+<coordenadasNacimiento>
+<longitud>-2.9012543200279444</longitud>
+<latitud>42.714266593756115</latitud>
+<altitud>487</altitud>
+</coordenadasNacimiento>
+<fechaFallecimiento>1932-11-21</fechaFallecimiento>
+<lugarFallecimiento>Miranda del Ebro, Burgos</lugarFallecimiento>
+<coordenadasFallecimiento>
+<longitud>-2.9342701669245717</longitud>
+<latitud>42.68702431631258</latitud>
+<altitud>472</altitud>
+</coordenadasFallecimiento>       
+<fotografias>
+<fotografia>multimedia/image212.jpg</fotografia>
+</fotografias>
+<comentario>Como le gustaban los montes de Miranda</comentario>            
+</datos>        
+</persona>      
+</persona>
+<persona nombre="Ana" apellidos="Carbone Benitez">
+<datos>
+<fechaNacimiento>1930-08-14</fechaNacimiento> 
+<lugarNacimiento>Canguçu,Río Grande del Sur,Brasil</lugarNacimiento> 
+<coordenadasNacimiento>
+<longitud>-52.67595195186193</longitud>
+<latitud>-31.399024108806675</latitud>
+<altitud>407</altitud>
+</coordenadasNacimiento>
+<fechaFallecimiento>2008-06-02</fechaFallecimiento>
+<lugarFallecimiento>Colloto, Asturias</lugarFallecimiento>
+<coordenadasFallecimiento>
+<longitud>-5.799744873048418</longitud>
+<latitud>43.37871749648649</latitud>
+<altitud>183</altitud>
+</coordenadasFallecimiento>          
+<fotografias>
+<fotografia>multimedia/image22.jpg</fotografia>
+</fotografias>
+<comentario>Amiga de los amigos de sus amigos</comentario>            
+</datos>
+<persona nombre="Benito" apellidos="Carbone Silva">
+<datos>
+<fechaNacimiento>1903-04-05</fechaNacimiento> 
+<lugarNacimiento>El Encinar, Salamanca</lugarNacimiento> 
+<coordenadasNacimiento>
+<longitud>-5.583938750921723</longitud>
+<latitud>40.8838501132761</latitud>
+<altitud>864</altitud>
+</coordenadasNacimiento>
+<fechaFallecimiento>1936-11-07</fechaFallecimiento>
+<lugarFallecimiento>Salamanca, Salamanca</lugarFallecimiento>
+<coordenadasFallecimiento>
+<longitud>-5.660368641176782</longitud>
+<latitud>40.96903408456835</latitud>
+<altitud>788</altitud>
+</coordenadasFallecimiento>    
+<fotografias>
+<fotografia>multimedia/image221.jpg</fotografia>
+</fotografias>
+<comentario>Lo que natura no da, Salamanca no lo otorga</comentario>            
+</datos>        
+</persona>
+<persona nombre="Esther" apellidos="Benitez Casillas">
+<datos>
+<fechaNacimiento>1906-02-28</fechaNacimiento> 
+<lugarNacimiento>Mozárbez,Salamanca</lugarNacimiento> 
+<coordenadasNacimiento>
+<longitud>-5.659126436438319</longitud>
+<latitud>40.861264102103505</latitud>
+<altitud>877</altitud>
+</coordenadasNacimiento>
+<fechaFallecimiento>1975-06-15</fechaFallecimiento>
+<lugarFallecimiento>Carbajosa de la Sagrada, Salamanca</lugarFallecimiento>
+<coordenadasFallecimiento>
+<longitud>-5.647563614311447</longitud>
+<latitud>40.93080200601295</latitud>
+<altitud>794</altitud>
+</coordenadasFallecimiento>       
+<fotografias>
+<fotografia>multimedia/image222.jpg</fotografia>
+</fotografias>
+<comentario>Consiguió lo que quería</comentario>            
+</datos>        
+</persona>       
+</persona> 
+</persona>
+</persona>
 </personas>
