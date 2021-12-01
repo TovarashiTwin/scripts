@@ -17,7 +17,7 @@ form {
 
     /* Que no se haga muy grande */
     max-width: 600px;  
-    min-width: 280px;
+    min-width: 360px;
 
     /*Esto es para que parezca una calculadora */
     padding: 20px;
