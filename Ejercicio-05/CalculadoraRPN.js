@@ -106,12 +106,15 @@ class CalculadoraRPN{
     }
     
     botonPotenciaDeX(){
-        if(this.theStack.length() >= 2){{}
-            var param1 = new Number(this.theStack.pop());
-            var param2 = new Number(this.theStack.pop());
-            this.theStack.push(Math.pow(param2,param1));
-            this.mostrarPila();
-        }
+        // if(this.theStack.length() >= 2){{}
+        //     var param1 = new Number(this.theStack.pop());
+        //     var param2 = new Number(this.theStack.pop());
+        //     this.theStack.push(Math.pow(param2,param1));
+        //     this.mostrarPila();
+        // }
+        var param1 = new Number(this.theStack.pop());       
+        this.theStack.push(Math.sqrt(param1));
+        this.mostrarPila();
     }
     // botonPotenciaDeDos(){
     //     var param1 = parseFloat(this.theStack.pop());       
